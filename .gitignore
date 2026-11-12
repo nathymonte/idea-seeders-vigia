@@ -1,0 +1,21 @@
+# Segredos
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+
+# Banco local
+*.db
+
+# Data lake gerado (os scripts recriam)
+dados/lake/
+
+# Sistema / editores
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,41 @@
+id,bairro,texto,categoria_esperada,urgencia_esperada,categoria_ia,urgencia_ia,justificativa_ia,acertou_categoria,acertou_urgencia
+1,Capão Redondo,"O poste da Rua das Acácias, número 120, está apagado há três dias.",iluminacao,baixa,erro,erro,GEMINI_API_KEY não configurada.,False,False
+2,Jardim Ângela,"A rua inteira fica um breu depois das 19h, as lâmpadas queimaram e já teve gente sendo abordada aqui semana passada.",iluminacao,media,erro,erro,GEMINI_API_KEY não configurada.,False,False
+3,Jardim Ângela,"Dois caras de moto estão abordando quem desce do ônibus no ponto da Estrada do M'Boi Mirim agora, um deles tá armado",roubo_furto,alta,erro,erro,GEMINI_API_KEY não configurada.,False,False
+4,Grajaú,Todo dia um homem fica parado na frente da escola falando gracinha pras meninas que saem do turno da noite.,assedio,media,erro,erro,GEMINI_API_KEY não configurada.,False,False
+5,Cidade Tiradentes,Picharam o muro da UBS e quebraram o vidro do ponto de ônibus.,vandalismo,baixa,erro,erro,GEMINI_API_KEY não configurada.,False,False
+6,Itaquera,"Levaram meu celular ontem à noite quando eu tava saindo da estação, o cara puxou da minha mão e correu.",roubo_furto,media,erro,erro,GEMINI_API_KEY não configurada.,False,False
+7,Brasilândia,"lampada piscando no poste em frente à padaria, liga e desliga a noite toda",iluminacao,baixa,erro,erro,GEMINI_API_KEY não configurada.,False,False
+8,Grajaú,"Tem um homem me seguindo desde o ponto de ônibus, já são três quarteirões, estou com medo",assedio,alta,erro,erro,GEMINI_API_KEY não configurada.,False,False
+9,Parelheiros,"Mato muito alto na praça, ninguém vem cortar faz meses e fica difícil de passar.",outros,baixa,erro,erro,GEMINI_API_KEY não configurada.,False,False
+10,Capão Redondo,"Socorro, estão assaltando a farmácia da esquina agora, tem gente lá dentro",roubo_furto,alta,erro,erro,GEMINI_API_KEY não configurada.,False,False
+11,Jardim São Luís,Arrancaram os fios do poste de novo pra vender o cobre.,vandalismo,baixa,erro,erro,GEMINI_API_KEY não configurada.,False,False
+12,Brasilândia,"Viela do lado do campo de futebol sem nenhuma luz, as mulheres do bairro evitam passar por lá de noite.",iluminacao,media,erro,erro,GEMINI_API_KEY não configurada.,False,False
+13,Itaquera,"Arrombaram meu carro estacionado na rua e levaram o som, foi durante a madrugada.",roubo_furto,media,erro,erro,GEMINI_API_KEY não configurada.,False,False
+14,Cidade Tiradentes,"No ônibus da linha 3789 um passageiro passou a mão em mim, desci antes do meu ponto.",assedio,media,erro,erro,GEMINI_API_KEY não configurada.,False,False
+15,Parelheiros,Tem um cachorro bravo solto que já mordeu duas crianças na rua de cima.,outros,media,erro,erro,GEMINI_API_KEY não configurada.,False,False
+16,Jardim Ângela,Destruíram os bancos e o brinquedo do parquinho da praça.,vandalismo,baixa,erro,erro,GEMINI_API_KEY não configurada.,False,False
+17,Capão Redondo,"Poste com a lâmpada quebrada, só sobrou o suporte.",iluminacao,baixa,erro,erro,GEMINI_API_KEY não configurada.,False,False
+18,Itaquera,"Acabei de ser assaltada com faca na saída do metrô, o cara ainda tá aqui perto",roubo_furto,alta,erro,erro,GEMINI_API_KEY não configurada.,False,False
+19,Jardim São Luís,Grupo de rapazes no bar da esquina fica mexendo com quem passa.,assedio,media,erro,erro,GEMINI_API_KEY não configurada.,False,False
+20,Grajaú,"Estão quebrando os orelhões e as câmeras da praça toda noite, hoje de novo.",vandalismo,media,erro,erro,GEMINI_API_KEY não configurada.,False,False
+21,Cidade Tiradentes,A passarela sobre a avenida está totalmente escura e teve dois roubos lá esse mês.,iluminacao,media,erro,erro,GEMINI_API_KEY não configurada.,False,False
+22,Brasilândia,Roubaram a bicicleta que estava presa no portão da minha casa.,roubo_furto,media,erro,erro,GEMINI_API_KEY não configurada.,False,False
+23,Parelheiros,"Buraco enorme na calçada da avenida, as pessoas tropeçam toda hora.",outros,baixa,erro,erro,GEMINI_API_KEY não configurada.,False,False
+24,Jardim Ângela,"Um homem está importunando uma moça dentro do vagão agora, ela tá chorando, linha 9.",assedio,alta,erro,erro,GEMINI_API_KEY não configurada.,False,False
+25,Cidade Tiradentes,"Teve uma onda de furtos de celular no ponto de ônibus da Av. Sapopemba, toda semana alguém é roubado.",roubo_furto,media,erro,erro,GEMINI_API_KEY não configurada.,False,False
+26,Itaquera,"Solicito troca da lâmpada do poste 3345, apagada desde segunda.",iluminacao,baixa,erro,erro,GEMINI_API_KEY não configurada.,False,False
+27,Capão Redondo,Jogaram pedra e quebraram as lâmpadas da quadra poliesportiva.,vandalismo,baixa,erro,erro,GEMINI_API_KEY não configurada.,False,False
+28,Brasilândia,"Carro abandonado há semanas na rua, à noite vira ponto de encontro e o pessoal tem medo de passar.",outros,media,erro,erro,GEMINI_API_KEY não configurada.,False,False
+29,Grajaú,Um motorista fica parando o carro ao lado das mulheres que voltam a pé da faculdade e oferecendo carona com insistência.,assedio,media,erro,erro,GEMINI_API_KEY não configurada.,False,False
+30,Jardim São Luís,"Estão tentando arrombar o portão da casa da minha vizinha agora, ela é idosa e mora sozinha.",roubo_furto,alta,erro,erro,GEMINI_API_KEY não configurada.,False,False
+31,Parelheiros,"Ponto de ônibus sem iluminação nenhuma, eu espero o ônibus das 5h da manhã sozinha no escuro e tenho medo.",iluminacao,media,erro,erro,GEMINI_API_KEY não configurada.,False,False
+32,Itaquera,Picharam a fachada da escola estadual durante o fim de semana.,vandalismo,baixa,erro,erro,GEMINI_API_KEY não configurada.,False,False
+33,Jardim Ângela,"Fui roubado no sábado perto da feira, levaram carteira e documentos.",roubo_furto,media,erro,erro,GEMINI_API_KEY não configurada.,False,False
+34,Cidade Tiradentes,"Sugiro colocar uma base da guarda municipal perto da praça, o bairro não tem nenhuma.",outros,baixa,erro,erro,GEMINI_API_KEY não configurada.,False,False
+35,Grajaú,"Tem um cara na porta do banheiro feminino do terminal assediando as mulheres agora, ninguém faz nada.",assedio,alta,erro,erro,GEMINI_API_KEY não configurada.,False,False
+36,Brasilândia,"Luz do poste acesa durante o dia inteiro, desperdício de energia.",iluminacao,baixa,erro,erro,GEMINI_API_KEY não configurada.,False,False
+37,Capão Redondo,"Tentaram me assaltar ontem na rua escura perto da escola, consegui correr.",roubo_furto,media,erro,erro,GEMINI_API_KEY não configurada.,False,False
+38,Jardim São Luís,"Quebraram de novo o semáforo do cruzamento, os carros quase batem.",vandalismo,media,erro,erro,GEMINI_API_KEY não configurada.,False,False
+39,Itaquera,Recebo cantadas e xingamentos todo dia passando em frente à obra da Rua Iguape.,assedio,media,erro,erro,GEMINI_API_KEY não configurada.,False,False
+40,Parelheiros,"Fio solto do poste soltando faísca no chão da calçada, tem criança passando.",outros,alta,erro,erro,GEMINI_API_KEY não configurada.,False,False
