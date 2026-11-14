@@ -7,6 +7,7 @@ services:
   api:
     build: .
     image: vigia:latest
+    pull_policy: build
     container_name: vigia-api
     working_dir: /vigia/app/api
     # Cria o banco de demonstração (se ainda não existir), gera o data lake e sobe a API
@@ -33,7 +34,9 @@ services:
     restart: unless-stopped
 
   web:
+    build: .                     # mesma imagem da API (o Docker reaproveita o cache, não monta duas vezes)
     image: vigia:latest
+    pull_policy: build           # nunca tenta baixar a imagem "vigia" da internet
     container_name: vigia-web
     command: streamlit run app/frontend/app.py --server.address 0.0.0.0 --server.port 8501 --server.headless true
     env_file:
