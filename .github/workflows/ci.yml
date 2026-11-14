@@ -1,0 +1,113 @@
+# CI/CD do VigIA: cada push roda testes, pipeline de dados, build e teste dos containers.
+# Em push na branch principal, publica a imagem Docker no GitHub Container Registry.
+name: CI/CD VigIA
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:   # permite rodar manualmente pela aba Actions
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  testes:
+    name: 1. Testes automatizados
+    runs-on: ubuntu-latest
+    env:
+      VIGIA_USAR_IA: "0"   # testes não dependem do Gemini nem de internet
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalar dependências
+        run: pip install -r requirements.txt
+
+      - name: Rodar os testes (pytest)
+        run: pytest --junitxml=relatorio-testes.xml
+
+      - name: Testar o pipeline de dados (bronze → silver → gold)
+        env:
+          VIGIA_DB: /tmp/ci/vigia.db
+          VIGIA_LAKE: /tmp/ci/lake
+        run: |
+          python app/api/carga_inicial.py
+          python dados/pipeline.py
+
+      - name: Guardar relatório dos testes e camada gold
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: evidencias-testes-e-dados
+          path: |
+            relatorio-testes.xml
+            /tmp/ci/lake/gold/
+            /tmp/ci/lake/relatorio_execucao.json
+
+  docker:
+    name: 2. Build e teste dos containers
+    needs: testes
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build das imagens
+        run: docker compose build
+
+      - name: Subir API e telas
+        run: docker compose up -d
+
+      - name: Verificar se os serviços respondem
+        run: |
+          for i in $(seq 1 30); do
+            if curl -fs http://localhost:8000/ && curl -fs http://localhost:8501/_stcore/health; then
+              echo; echo "API e telas no ar ✅"; exit 0
+            fi
+            sleep 3
+          done
+          echo "Os serviços não subiram ❌"; docker compose logs; exit 1
+
+      - name: Testar a API dentro do container
+        run: |
+          curl -fs http://localhost:8000/bairros
+          curl -fs -X POST http://localhost:8000/auth/login \
+            -H "Content-Type: application/json" \
+            -d '{"email":"gestor@vigia.com","senha":"gestor123"}' > /dev/null && echo "Login OK ✅"
+
+      - name: Logs dos containers
+        if: always()
+        run: docker compose logs
+
+      - name: Derrubar os containers
+        if: always()
+        run: docker compose down -v
+
+  publicar:
+    name: 3. Publicar imagem (deploy)
+    needs: docker
+    if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Nome da imagem em minúsculas
+        run: echo "IMAGEM=ghcr.io/${GITHUB_REPOSITORY,,}" >> "$GITHUB_ENV"
+
+      - uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: true
+          tags: |
+            ${{ env.IMAGEM }}:latest
+            ${{ env.IMAGEM }}:${{ github.sha }}

@@ -1,0 +1,4 @@
+# Tudo o que o projeto precisa (app, IA, dados e testes)
+-r app/requirements.txt
+pytest>=8.0
+httpx>=0.27

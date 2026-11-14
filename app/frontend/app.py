@@ -10,14 +10,23 @@ Telas:
   3. Minhas ocorrências      (cidadão)
   4. Fila de atendimento     (gestor)
   5. Postes inteligentes     (todos)
+  6. Dashboard               (gestor) — lê a camada gold do data lake
 """
 
 import os
+import subprocess
+import sys
+from datetime import timedelta
 from pathlib import Path
 
+import altair as alt
 import pandas as pd
 import requests
 import streamlit as st
+
+RAIZ = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(RAIZ / "dados"))
+import indicadores as ind  # noqa: E402  (funções analíticas da Área 2)
 
 try:
     from dotenv import load_dotenv
@@ -239,12 +248,185 @@ def tela_postes():
     st.dataframe(visao, hide_index=True, width="stretch")
 
 
+# ------------------------------------------------------------------ tela 6: dashboard (Área 2)
+@st.cache_data(ttl=600)
+def dados_gold():
+    return ind.carregar_gold()
+
+
+def porcentagem(valor):
+    return f"{valor:.0%}".replace(".", ",")
+
+
+def tela_dashboard():
+    st.header("📊 Dashboard")
+    st.caption("Dados da camada gold do data lake: relatos dos cidadãos + sensores dos postes.")
+
+    if st.button("🔄 Atualizar dados (rodar o pipeline)"):
+        with st.spinner("Rodando bronze → silver → gold..."):
+            resultado = subprocess.run([sys.executable, str(RAIZ / "dados" / "pipeline.py")],
+                                       capture_output=True, text=True)
+        if resultado.returncode != 0:
+            st.error(resultado.stdout + resultado.stderr)
+        else:
+            dados_gold.clear()
+            st.toast("Data lake atualizado!")
+
+    try:
+        gold = dados_gold()
+    except FileNotFoundError:
+        st.warning("O data lake ainda não foi gerado. Clique no botão acima ou rode `python dados/pipeline.py`.")
+        return
+    ocorrencias_todas, leituras_todas = gold["fato_ocorrencias"], gold["fato_leituras"]
+
+    # ---- filtros
+    f1, f2, f3 = st.columns([2, 2, 2])
+    lista_bairros = sorted(ocorrencias_todas["bairro"].unique())
+    filtro_bairros = f1.multiselect("Bairro", lista_bairros, placeholder="Todos")
+    data_max = ocorrencias_todas["data"].max()
+    periodo = f2.date_input("Período", value=(data_max - timedelta(days=29), data_max),
+                            min_value=ocorrencias_todas["data"].min(), max_value=data_max, format="DD/MM/YYYY")
+    filtro_categorias = f3.multiselect("Categoria", sorted(ocorrencias_todas["categoria"].unique()),
+                                       placeholder="Todas")
+    if not isinstance(periodo, tuple) or len(periodo) != 2:
+        st.info("Escolha a data final do período.")
+        return
+    inicio, fim = periodo
+
+    bairros_sel = filtro_bairros or lista_bairros
+    oc_base = ocorrencias_todas[ocorrencias_todas["bairro"].isin(bairros_sel)]
+    if filtro_categorias:
+        oc_base = oc_base[oc_base["categoria"].isin(filtro_categorias)]
+    oc = oc_base[oc_base["data"].between(inicio, fim)]
+    leituras = leituras_todas[leituras_todas["bairro"].isin(bairros_sel)
+                              & leituras_todas["data"].between(inicio, fim)]
+
+    # ---- indicadores
+    variacao = ind.variacao_periodo_anterior(oc_base, inicio, fim)
+    tempo = ind.tempo_medio_resolucao(oc)
+    tempo_alta = ind.tempo_medio_resolucao(oc, "Alta")
+    k1, k2, k3, k4, k5 = st.columns(5)
+    k1.metric("Ocorrências", ind.total_ocorrencias(oc),
+              delta=None if variacao is None else f"{variacao:+.0%} vs período anterior", delta_color="inverse")
+    k2.metric("Pendentes", ind.ocorrencias_pendentes(oc))
+    k3.metric("Urgência alta", porcentagem(ind.pct_urgencia_alta(oc)))
+    k4.metric("Tempo médio de resolução", f"{tempo:.0f} h" if tempo is not None else "—")
+    k5.metric("Resolução das urgências altas", f"{tempo_alta:.0f} h" if tempo_alta is not None else "—")
+
+    if oc.empty:
+        st.info("Nenhuma ocorrência com esses filtros.")
+    else:
+        cores_urgencia = alt.Scale(domain=["Alta", "Média", "Baixa"], range=["#d32f2f", "#f57c00", "#388e3c"])
+        g1, g2 = st.columns(2)
+        with g1:
+            st.subheader("Ocorrências por bairro")
+            grafico = alt.Chart(oc).mark_bar().encode(
+                x=alt.X("count():Q", title="Ocorrências"),
+                y=alt.Y("bairro:N", sort="-x", title=None),
+                color=alt.Color("urgencia:N", scale=cores_urgencia, title="Urgência"),
+                tooltip=["bairro", "urgencia", "count()"],
+            )
+            st.altair_chart(grafico, width="stretch")
+        with g2:
+            st.subheader("Quando os relatos acontecem")
+            st.caption(f"{porcentagem(ind.pct_relatos_noturnos(oc))} dos relatos são entre 18h e 6h.")
+            por_faixa = ind.ocorrencias_por(oc, "faixa_horaria")
+            por_faixa["faixa"] = por_faixa["faixa_horaria"].str[2:]
+            grafico = alt.Chart(por_faixa).mark_bar(color="#3949ab").encode(
+                x=alt.X("faixa:N", sort=list(por_faixa["faixa"]), title=None, axis=alt.Axis(labelAngle=0)),
+                y=alt.Y("ocorrencias:Q", title="Ocorrências"),
+                tooltip=["faixa", "ocorrencias"],
+            )
+            st.altair_chart(grafico, width="stretch")
+
+        g3, g4 = st.columns(2)
+        with g3:
+            st.subheader("Por categoria")
+            grafico = alt.Chart(ind.ocorrencias_por(oc, "categoria")).mark_arc(innerRadius=60).encode(
+                theta="ocorrencias:Q",
+                color=alt.Color("categoria:N", title="Categoria", scale=alt.Scale(scheme="tableau10")),
+                tooltip=["categoria", "ocorrencias"],
+            )
+            st.altair_chart(grafico, width="stretch")
+        with g4:
+            st.subheader("Evolução semanal")
+            st.caption("A primeira e a última semana do período podem estar incompletas.")
+            semanal = oc.assign(semana=pd.to_datetime(oc["data"]).dt.to_period("W").dt.start_time)
+            semanal = semanal.groupby("semana").size().reset_index(name="ocorrencias")
+            grafico = alt.Chart(semanal).mark_line(point=True, color="#3949ab").encode(
+                x=alt.X("semana:T", title="Semana", axis=alt.Axis(format="%d/%m")),
+                y=alt.Y("ocorrencias:Q", title="Ocorrências"),
+                tooltip=[alt.Tooltip("semana:T", format="%d/%m/%Y"), "ocorrencias"],
+            )
+            st.altair_chart(grafico, width="stretch")
+
+    # ---- sensores
+    st.divider()
+    st.subheader("💡 Postes e sensores")
+    s1, s2, s3 = st.columns(3)
+    s1.metric("Leituras com a luz apagada", porcentagem(ind.pct_luz_apagada(leituras)))
+    s2.metric("Acionamentos de pânico", ind.acionamentos_panico(leituras))
+    s3.metric("Escuro com gente passando", ind.situacoes_de_risco(leituras),
+              help="Leituras em que a lâmpada estava apagada e o sensor de presença detectou movimento.")
+    falhas = ind.postes_com_falha_frequente(leituras)
+    if falhas:
+        st.warning(f"Manutenção recomendada: **{', '.join(falhas)}** ficaram apagados em mais de 20% das noites.")
+
+    if not leituras.empty:
+        g5, g6 = st.columns(2)
+        with g5:
+            st.caption("% de leituras com a luz apagada, por poste")
+            taxa = leituras.groupby(["poste", "bairro"])["luz_apagada"].mean().reset_index()
+            grafico = alt.Chart(taxa).mark_bar().encode(
+                x=alt.X("luz_apagada:Q", title="Luz apagada", axis=alt.Axis(format="%")),
+                y=alt.Y("poste:N", sort="-x", title=None),
+                color=alt.condition(alt.datum.luz_apagada > 0.2, alt.value("#d32f2f"), alt.value("#90a4ae")),
+                tooltip=["poste", "bairro", alt.Tooltip("luz_apagada:Q", format=".0%")],
+            )
+            st.altair_chart(grafico, width="stretch")
+        with g6:
+            st.caption("Escuro com gente passando, por poste e hora da noite")
+            ordem_horas = list(range(18, 24)) + list(range(0, 6))
+            mapa = leituras.groupby(["poste", "hora"])["escuro_com_movimento"].sum().reset_index()
+            grafico = alt.Chart(mapa).mark_rect().encode(
+                x=alt.X("hora:O", sort=ordem_horas, title="Hora", axis=alt.Axis(labelAngle=0)),
+                y=alt.Y("poste:N", title=None),
+                color=alt.Color("escuro_com_movimento:Q", scale=alt.Scale(scheme="reds"), title="Situações"),
+                tooltip=["poste", "hora", "escuro_com_movimento"],
+            )
+            st.altair_chart(grafico, width="stretch")
+
+    # ---- prioridade por bairro
+    st.divider()
+    st.subheader("🎯 Para onde mandar a equipe primeiro")
+    st.caption("Índice de risco (0 a 100) da camada gold: junta urgências altas, pendências e falhas de iluminação. "
+               "Considera todo o histórico.")
+    resumo = gold["resumo_bairro"]
+    resumo = resumo[resumo["bairro"].isin(bairros_sel)]
+    st.dataframe(
+        resumo[["bairro", "indice_risco", "total_ocorrencias", "pendentes", "urgencia_alta",
+                "pct_leituras_luz_apagada", "acionamentos_panico"]],
+        hide_index=True, width="stretch",
+        column_config={
+            "bairro": "Bairro",
+            "indice_risco": st.column_config.ProgressColumn("Índice de risco", min_value=0, max_value=100,
+                                                            format="%d"),
+            "total_ocorrencias": "Ocorrências",
+            "pendentes": "Pendentes",
+            "urgencia_alta": "Urgência alta",
+            "pct_leituras_luz_apagada": st.column_config.NumberColumn("Luz apagada", format="%.1f%%"),
+            "acionamentos_panico": "Pânico",
+        },
+    )
+
+
 # ------------------------------------------------------------------ navegação
 if not st.session_state.get("token"):
     tela_entrar()
 else:
     if st.session_state.perfil == "gestor":
-        telas = {"Fila de atendimento": tela_fila, "Postes inteligentes": tela_postes}
+        telas = {"Fila de atendimento": tela_fila, "Dashboard": tela_dashboard,
+                 "Postes inteligentes": tela_postes}
     else:
         telas = {"Novo relato": tela_novo_relato, "Minhas ocorrências": tela_minhas_ocorrencias,
                  "Postes do bairro": tela_postes}

@@ -1,0 +1,13 @@
+.git
+.github
+.venv
+venv
+.idea
+.vscode
+.env
+**/__pycache__
+**/*.pyc
+.pytest_cache
+dados/banco/*.db
+dados/lake
+docs

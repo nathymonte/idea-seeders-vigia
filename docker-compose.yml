@@ -1,0 +1,57 @@
+# Sobe o VigIA inteiro com um comando:
+#     docker compose up --build
+# API:   http://localhost:8000/docs
+# Telas: http://localhost:8501
+
+services:
+  api:
+    build: .
+    image: vigia:latest
+    container_name: vigia-api
+    working_dir: /vigia/app/api
+    # Cria o banco de demonstração (se ainda não existir), gera o data lake e sobe a API
+    command: >
+      sh -c "python carga_inicial.py &&
+             python /vigia/dados/pipeline.py &&
+             uvicorn main:app --host 0.0.0.0 --port 8000"
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      VIGIA_DB: /data/vigia.db
+    ports:
+      - "8000:8000"
+    volumes:
+      - banco:/data
+      - lake:/vigia/dados/lake
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 20s
+    restart: unless-stopped
+
+  web:
+    image: vigia:latest
+    container_name: vigia-web
+    command: streamlit run app/frontend/app.py --server.address 0.0.0.0 --server.port 8501 --server.headless true
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      API_URL: http://api:8000          # dentro do Docker, a API é encontrada pelo nome do serviço
+      VIGIA_DB: /data/vigia.db
+    ports:
+      - "8501:8501"
+    volumes:
+      - banco:/data
+      - lake:/vigia/dados/lake
+    depends_on:
+      api:
+        condition: service_healthy   # só sobe as telas quando a API estiver respondendo
+    restart: unless-stopped
+
+volumes:
+  banco:
+  lake:

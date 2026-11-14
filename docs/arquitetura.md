@@ -29,12 +29,13 @@ flowchart LR
     subgraph DADOS["📊 Área 2 · Big Data"]
         DB[("SQLite<br/>banco operacional")]
         LAKE["Data lake<br/>bronze → silver → gold"]
-        BI["Dashboard<br/>Power BI"]
+        BI["Dashboard<br/>Streamlit"]
     end
 
     subgraph DEVOPS["⚙️ Área 4 · DevOps"]
         GIT["GitHub"]
-        CI["GitHub Actions<br/>testes automáticos"]
+        CI["GitHub Actions<br/>testes + build + deploy"]
+        REG2["GitHub Container<br/>Registry"]
         DOCK["Docker Compose"]
     end
 
@@ -49,7 +50,9 @@ flowchart LR
     API -- grava --> DB
     DB -- ingestão --> LAKE
     LAKE --> BI
+    WEB -. tela do gestor .-> BI
     GIT --> CI
+    CI -- imagem --> REG2
     DOCK -. sobe .-> API
     DOCK -. sobe .-> WEB
 ```
@@ -62,8 +65,8 @@ flowchart LR
 | Postes → API | Luz, presença e pânico | Sensores viram ocorrências automaticamente (pânico = urgência alta, luz apagada = iluminação) |
 | API → IA | Texto do relato | Cada relato chega na fila já com categoria e urgência |
 | API → Banco | Usuários, ocorrências, leituras | Fonte única dos dados |
-| Banco → Data lake → Power BI | Ocorrências e leituras | Os dados da IA e dos sensores alimentam o dashboard |
-| GitHub → Actions | Cada commit | Os testes rodam sozinhos a cada mudança |
+| Banco → Data lake → Dashboard | Ocorrências e leituras | Os dados da IA e dos sensores alimentam o dashboard, que fica dentro do próprio app |
+| GitHub → Actions → Registry | Cada commit | Testes, build e publicação da imagem rodam sozinhos a cada mudança |
 
 ## Tecnologias
 
@@ -75,5 +78,5 @@ flowchart LR
 | Segurança | bcrypt (senhas), JWT (sessão), chave de API (dispositivos) |
 | IA | Google Gemini (`google-genai`) + regras de palavras-chave |
 | IoT | ESP32 simulado no Wokwi + simulador em Python |
-| Dados | pandas + Power BI (DAX) |
+| Dados | pandas (pipeline e funções analíticas) + Altair (gráficos) |
 | DevOps | Git/GitHub, GitHub Actions, Docker Compose, pytest |

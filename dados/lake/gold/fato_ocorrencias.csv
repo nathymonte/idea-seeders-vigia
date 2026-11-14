@@ -1,0 +1,441 @@
+﻿id;data;hora;faixa_horaria;dia_semana;mes;bairro;latitude;longitude;categoria;urgencia;status;origem;poste_codigo;tempo_resolucao_horas
+1;2026-08-25;2;1 Madrugada (0h-6h);2 Terça;2026-08;Capão Redondo;-23,66717;-46,77587;Iluminação;Baixa;Resolvida;Cidadão;;81,5
+2;2026-09-06;1;1 Madrugada (0h-6h);7 Domingo;2026-09;Jardim Ângela;-23,72033;-46,77615;Iluminação;Média;Aberta;Cidadão;;
+3;2026-08-29;0;1 Madrugada (0h-6h);6 Sábado;2026-08;Jardim Ângela;-23,71381;-46,77182;Roubo/furto;Alta;Resolvida;Cidadão;;9,0
+4;2026-10-10;21;4 Noite (18h-24h);6 Sábado;2026-10;Grajaú;-23,78715;-46,66944;Assédio;Média;Resolvida;Cidadão;;27,4
+5;2026-10-18;23;4 Noite (18h-24h);7 Domingo;2026-10;Cidade Tiradentes;-23,5846;-46,41202;Vandalismo;Baixa;Aberta;Cidadão;;
+6;2026-10-01;18;4 Noite (18h-24h);4 Quinta;2026-10;Itaquera;-23,54081;-46,4635;Roubo/furto;Média;Aberta;Cidadão;;
+7;2026-09-27;1;1 Madrugada (0h-6h);7 Domingo;2026-09;Brasilândia;-23,46167;-46,68545;Iluminação;Baixa;Resolvida;Cidadão;;162,2
+8;2026-08-16;1;1 Madrugada (0h-6h);7 Domingo;2026-08;Grajaú;-23,794;-46,67034;Assédio;Alta;Resolvida;Cidadão;;4,8
+9;2026-11-02;9;2 Manhã (6h-12h);1 Segunda;2026-11;Parelheiros;-23,8296;-46,73281;Outros;Baixa;Resolvida;Cidadão;;110,4
+10;2026-10-11;19;4 Noite (18h-24h);7 Domingo;2026-10;Capão Redondo;-23,67848;-46,77482;Roubo/furto;Alta;Resolvida;Cidadão;;8,0
+11;2026-10-25;13;3 Tarde (12h-18h);7 Domingo;2026-10;Jardim São Luís;-23,65186;-46,73531;Vandalismo;Baixa;Resolvida;Cidadão;;166,6
+12;2026-11-07;4;1 Madrugada (0h-6h);6 Sábado;2026-11;Brasilândia;-23,47758;-46,67874;Iluminação;Média;Resolvida;Cidadão;;47,1
+13;2026-09-03;22;4 Noite (18h-24h);4 Quinta;2026-09;Itaquera;-23,53231;-46,45314;Roubo/furto;Média;Resolvida;Cidadão;;55,1
+14;2026-10-27;5;1 Madrugada (0h-6h);2 Terça;2026-10;Cidade Tiradentes;-23,57726;-46,41063;Assédio;Média;Resolvida;Cidadão;;58,4
+15;2026-09-01;10;2 Manhã (6h-12h);2 Terça;2026-09;Parelheiros;-23,82713;-46,72188;Outros;Média;Resolvida;Cidadão;;25,7
+16;2026-10-31;3;1 Madrugada (0h-6h);6 Sábado;2026-10;Jardim Ângela;-23,72093;-46,77317;Vandalismo;Baixa;Resolvida;Cidadão;;122,1
+17;2026-09-16;15;3 Tarde (12h-18h);3 Quarta;2026-09;Capão Redondo;-23,66749;-46,77577;Iluminação;Baixa;Resolvida;Cidadão;;38,3
+18;2026-09-07;20;4 Noite (18h-24h);1 Segunda;2026-09;Itaquera;-23,5413;-46,45693;Roubo/furto;Alta;Resolvida;Cidadão;;2,9
+19;2026-10-12;23;4 Noite (18h-24h);1 Segunda;2026-10;Jardim São Luís;-23,64475;-46,73159;Assédio;Média;Em atendimento;Cidadão;;
+20;2026-10-07;21;4 Noite (18h-24h);3 Quarta;2026-10;Grajaú;-23,78035;-46,66421;Vandalismo;Média;Resolvida;Cidadão;;26,9
+21;2026-09-08;22;4 Noite (18h-24h);2 Terça;2026-09;Cidade Tiradentes;-23,57362;-46,40163;Iluminação;Média;Resolvida;Cidadão;;16,0
+22;2026-10-06;4;1 Madrugada (0h-6h);2 Terça;2026-10;Brasilândia;-23,47719;-46,68728;Roubo/furto;Média;Resolvida;Cidadão;;91,7
+23;2026-11-06;23;4 Noite (18h-24h);5 Sexta;2026-11;Parelheiros;-23,82749;-46,726;Outros;Baixa;Resolvida;Cidadão;;62,2
+24;2026-10-12;15;3 Tarde (12h-18h);1 Segunda;2026-10;Jardim Ângela;-23,71141;-46,7662;Assédio;Alta;Resolvida;Cidadão;;4,0
+25;2026-10-20;19;4 Noite (18h-24h);2 Terça;2026-10;Cidade Tiradentes;-23,58344;-46,40885;Roubo/furto;Média;Resolvida;Cidadão;;67,4
+26;2026-10-30;4;1 Madrugada (0h-6h);5 Sexta;2026-10;Itaquera;-23,5454;-46,4616;Iluminação;Baixa;Resolvida;Cidadão;;156,0
+27;2026-11-05;19;4 Noite (18h-24h);4 Quinta;2026-11;Capão Redondo;-23,66379;-46,77221;Vandalismo;Baixa;Em atendimento;Cidadão;;
+28;2026-11-05;15;3 Tarde (12h-18h);4 Quinta;2026-11;Brasilândia;-23,47625;-46,67829;Outros;Média;Resolvida;Cidadão;;31,9
+29;2026-09-02;17;3 Tarde (12h-18h);3 Quarta;2026-09;Grajaú;-23,79179;-46,67306;Assédio;Média;Resolvida;Cidadão;;80,3
+30;2026-09-20;8;2 Manhã (6h-12h);7 Domingo;2026-09;Jardim São Luís;-23,64953;-46,72932;Roubo/furto;Alta;Resolvida;Cidadão;;9,2
+31;2026-11-02;1;1 Madrugada (0h-6h);1 Segunda;2026-11;Parelheiros;-23,81977;-46,73203;Iluminação;Média;Em atendimento;Cidadão;;
+32;2026-10-21;15;3 Tarde (12h-18h);3 Quarta;2026-10;Itaquera;-23,545;-46,44753;Vandalismo;Baixa;Resolvida;Cidadão;;92,8
+33;2026-09-19;21;4 Noite (18h-24h);6 Sábado;2026-09;Jardim Ângela;-23,70221;-46,76408;Roubo/furto;Média;Resolvida;Cidadão;;18,5
+34;2026-11-03;22;4 Noite (18h-24h);2 Terça;2026-11;Cidade Tiradentes;-23,58407;-46,40957;Outros;Baixa;Em atendimento;Cidadão;;
+35;2026-09-24;22;4 Noite (18h-24h);4 Quinta;2026-09;Grajaú;-23,7903;-46,65932;Assédio;Alta;Resolvida;Cidadão;;11,8
+36;2026-09-17;5;1 Madrugada (0h-6h);4 Quinta;2026-09;Brasilândia;-23,46778;-46,68263;Iluminação;Baixa;Resolvida;Cidadão;;239,1
+37;2026-10-26;3;1 Madrugada (0h-6h);1 Segunda;2026-10;Capão Redondo;-23,67106;-46,77444;Roubo/furto;Média;Resolvida;Cidadão;;61,7
+38;2026-11-07;1;1 Madrugada (0h-6h);6 Sábado;2026-11;Jardim São Luís;-23,65985;-46,72978;Vandalismo;Média;Resolvida;Cidadão;;84,0
+39;2026-11-04;21;4 Noite (18h-24h);3 Quarta;2026-11;Itaquera;-23,5453;-46,4636;Assédio;Média;Resolvida;Cidadão;;69,5
+40;2026-09-03;4;1 Madrugada (0h-6h);4 Quinta;2026-09;Parelheiros;-23,83536;-46,72385;Outros;Alta;Aberta;Cidadão;;
+41;2026-10-12;4;1 Madrugada (0h-6h);1 Segunda;2026-10;Brasilândia;-23,47628;-46,68409;Roubo/furto;Média;Resolvida;Cidadão;;36,1
+42;2026-11-05;0;1 Madrugada (0h-6h);4 Quinta;2026-11;Capão Redondo;-23,68043;-46,78514;Roubo/furto;Alta;Resolvida;Cidadão;;12,0
+43;2026-10-01;22;4 Noite (18h-24h);4 Quinta;2026-10;Grajaú;-23,78684;-46,66414;Iluminação;Baixa;Resolvida;Cidadão;;94,1
+44;2026-08-23;15;3 Tarde (12h-18h);7 Domingo;2026-08;Brasilândia;-23,46563;-46,67822;Vandalismo;Média;Resolvida;Cidadão;;38,8
+45;2026-11-01;20;4 Noite (18h-24h);7 Domingo;2026-11;Capão Redondo;-23,6698;-46,77505;Outros;Baixa;Em atendimento;Cidadão;;
+46;2026-10-12;14;3 Tarde (12h-18h);1 Segunda;2026-10;Cidade Tiradentes;-23,59035;-46,41073;Assédio;Média;Resolvida;Cidadão;;83,4
+47;2026-10-03;20;4 Noite (18h-24h);6 Sábado;2026-10;Grajaú;-23,78676;-46,66089;Roubo/furto;Alta;Resolvida;Cidadão;;3,4
+48;2026-11-05;23;4 Noite (18h-24h);4 Quinta;2026-11;Grajaú;-23,77891;-46,66335;Iluminação;Baixa;Resolvida;Cidadão;;147,3
+49;2026-11-09;6;2 Manhã (6h-12h);1 Segunda;2026-11;Jardim Ângela;-23,7214;-46,77364;Roubo/furto;Alta;Resolvida;Cidadão;;11,7
+50;2026-09-30;20;4 Noite (18h-24h);3 Quarta;2026-09;Cidade Tiradentes;-23,57721;-46,40068;Vandalismo;Baixa;Resolvida;Cidadão;;234,7
+51;2026-10-23;22;4 Noite (18h-24h);5 Sexta;2026-10;Jardim São Luís;-23,64451;-46,73335;Vandalismo;Baixa;Em atendimento;Cidadão;;
+52;2026-10-14;5;1 Madrugada (0h-6h);3 Quarta;2026-10;Itaquera;-23,54923;-46,45659;Vandalismo;Baixa;Resolvida;Cidadão;;114,0
+53;2026-09-17;8;2 Manhã (6h-12h);4 Quinta;2026-09;Itaquera;-23,54953;-46,46214;Roubo/furto;Média;Resolvida;Cidadão;;33,0
+54;2026-11-06;23;4 Noite (18h-24h);5 Sexta;2026-11;Capão Redondo;-23,67171;-46,77581;Roubo/furto;Média;Em atendimento;Cidadão;;
+55;2026-11-11;2;1 Madrugada (0h-6h);3 Quarta;2026-11;Capão Redondo;-23,66265;-46,78409;Assédio;Alta;Aberta;Cidadão;;
+56;2026-10-01;19;4 Noite (18h-24h);4 Quinta;2026-10;Brasilândia;-23,47659;-46,67901;Iluminação;Baixa;Resolvida;Cidadão;;236,8
+57;2026-08-16;12;3 Tarde (12h-18h);7 Domingo;2026-08;Capão Redondo;-23,66751;-46,77456;Roubo/furto;Média;Resolvida;Cidadão;;58,3
+58;2026-11-06;23;4 Noite (18h-24h);5 Sexta;2026-11;Jardim Ângela;-23,71592;-46,76384;Roubo/furto;Média;Em atendimento;Cidadão;;
+59;2026-08-21;11;2 Manhã (6h-12h);5 Sexta;2026-08;Brasilândia;-23,47506;-46,6837;Vandalismo;Média;Resolvida;Cidadão;;59,6
+60;2026-10-23;18;4 Noite (18h-24h);5 Sexta;2026-10;Cidade Tiradentes;-23,58612;-46,415;Roubo/furto;Média;Resolvida;Cidadão;;82,4
+61;2026-10-04;13;3 Tarde (12h-18h);7 Domingo;2026-10;Brasilândia;-23,46303;-46,6778;Vandalismo;Média;Resolvida;Cidadão;;56,1
+62;2026-10-09;15;3 Tarde (12h-18h);5 Sexta;2026-10;Cidade Tiradentes;-23,57316;-46,4145;Vandalismo;Baixa;Resolvida;Cidadão;;55,1
+63;2026-10-20;2;1 Madrugada (0h-6h);2 Terça;2026-10;Capão Redondo;-23,6724;-46,77241;Vandalismo;Média;Em atendimento;Cidadão;;
+64;2026-08-26;17;3 Tarde (12h-18h);3 Quarta;2026-08;Jardim Ângela;-23,71732;-46,76768;Vandalismo;Baixa;Resolvida;Cidadão;;136,9
+65;2026-11-01;20;4 Noite (18h-24h);7 Domingo;2026-11;Jardim São Luís;-23,64384;-46,73864;Iluminação;Baixa;Aberta;Cidadão;;
+66;2026-10-30;13;3 Tarde (12h-18h);5 Sexta;2026-10;Brasilândia;-23,46772;-46,69065;Assédio;Média;Resolvida;Cidadão;;57,7
+67;2026-09-11;12;3 Tarde (12h-18h);5 Sexta;2026-09;Brasilândia;-23,46403;-46,68751;Assédio;Média;Resolvida;Cidadão;;87,6
+68;2026-08-25;5;1 Madrugada (0h-6h);2 Terça;2026-08;Itaquera;-23,54451;-46,46445;Iluminação;Baixa;Resolvida;Cidadão;;163,9
+69;2026-10-03;6;2 Manhã (6h-12h);6 Sábado;2026-10;Capão Redondo;-23,67888;-46,78174;Assédio;Média;Aberta;Cidadão;;
+70;2026-11-06;11;2 Manhã (6h-12h);5 Sexta;2026-11;Cidade Tiradentes;-23,58806;-46,4108;Roubo/furto;Alta;Resolvida;Cidadão;;6,0
+71;2026-11-12;21;4 Noite (18h-24h);4 Quinta;2026-11;Parelheiros;-23,82746;-46,71815;Vandalismo;Média;Em atendimento;Cidadão;;
+72;2026-09-22;15;3 Tarde (12h-18h);2 Terça;2026-09;Itaquera;-23,54559;-46,46161;Vandalismo;Média;Resolvida;Cidadão;;63,6
+73;2026-09-26;7;2 Manhã (6h-12h);6 Sábado;2026-09;Jardim Ângela;-23,70539;-46,76241;Outros;Média;Resolvida;Cidadão;;73,5
+74;2026-09-25;17;3 Tarde (12h-18h);5 Sexta;2026-09;Brasilândia;-23,46605;-46,69429;Outros;Alta;Aberta;Cidadão;;
+75;2026-10-12;9;2 Manhã (6h-12h);1 Segunda;2026-10;Grajaú;-23,77801;-46,66943;Roubo/furto;Alta;Resolvida;Cidadão;;5,2
+76;2026-11-04;13;3 Tarde (12h-18h);3 Quarta;2026-11;Capão Redondo;-23,6749;-46,7764;Vandalismo;Baixa;Resolvida;Cidadão;;240,0
+77;2026-10-14;3;1 Madrugada (0h-6h);3 Quarta;2026-10;Itaquera;-23,54053;-46,46371;Roubo/furto;Alta;Resolvida;Cidadão;;4,2
+78;2026-10-13;20;4 Noite (18h-24h);2 Terça;2026-10;Jardim Ângela;-23,70783;-46,76524;Assédio;Média;Resolvida;Cidadão;;93,0
+79;2026-11-01;17;3 Tarde (12h-18h);7 Domingo;2026-11;Parelheiros;-23,82345;-46,71784;Vandalismo;Baixa;Em atendimento;Cidadão;;
+80;2026-10-20;1;1 Madrugada (0h-6h);2 Terça;2026-10;Parelheiros;-23,82306;-46,73097;Iluminação;Baixa;Resolvida;Cidadão;;85,5
+81;2026-09-03;20;4 Noite (18h-24h);4 Quinta;2026-09;Itaquera;-23,54862;-46,45305;Assédio;Média;Resolvida;Cidadão;;68,4
+82;2026-09-13;2;1 Madrugada (0h-6h);7 Domingo;2026-09;Jardim São Luís;-23,64885;-46,74029;Iluminação;Baixa;Resolvida;Cidadão;;205,1
+83;2026-10-11;18;4 Noite (18h-24h);7 Domingo;2026-10;Parelheiros;-23,82829;-46,72238;Outros;Baixa;Resolvida;Cidadão;;134,6
+84;2026-10-14;21;4 Noite (18h-24h);3 Quarta;2026-10;Capão Redondo;-23,66689;-46,778;Roubo/furto;Alta;Resolvida;Cidadão;;6,4
+85;2026-09-12;21;4 Noite (18h-24h);6 Sábado;2026-09;Capão Redondo;-23,67673;-46,78381;Roubo/furto;Média;Resolvida;Cidadão;;43,4
+86;2026-10-10;16;3 Tarde (12h-18h);6 Sábado;2026-10;Cidade Tiradentes;-23,5778;-46,40943;Assédio;Média;Resolvida;Cidadão;;21,4
+87;2026-08-24;19;4 Noite (18h-24h);1 Segunda;2026-08;Cidade Tiradentes;-23,58777;-46,40536;Vandalismo;Baixa;Resolvida;Cidadão;;55,0
+88;2026-09-28;13;3 Tarde (12h-18h);1 Segunda;2026-09;Cidade Tiradentes;-23,58119;-46,41216;Vandalismo;Média;Resolvida;Cidadão;;95,7
+89;2026-10-13;4;1 Madrugada (0h-6h);2 Terça;2026-10;Capão Redondo;-23,67951;-46,77868;Roubo/furto;Alta;Em atendimento;Cidadão;;
+90;2026-09-14;5;1 Madrugada (0h-6h);1 Segunda;2026-09;Capão Redondo;-23,67624;-46,78739;Iluminação;Média;Resolvida;Cidadão;;57,2
+91;2026-09-29;3;1 Madrugada (0h-6h);2 Terça;2026-09;Capão Redondo;-23,68099;-46,78831;Roubo/furto;Média;Resolvida;Cidadão;;24,7
+92;2026-10-29;18;4 Noite (18h-24h);4 Quinta;2026-10;Cidade Tiradentes;-23,58072;-46,40981;Assédio;Média;Resolvida;Cidadão;;85,6
+93;2026-11-08;5;1 Madrugada (0h-6h);7 Domingo;2026-11;Capão Redondo;-23,67389;-46,78792;Assédio;Média;Resolvida;Cidadão;;81,5
+94;2026-09-03;23;4 Noite (18h-24h);4 Quinta;2026-09;Grajaú;-23,78031;-46,66287;Assédio;Média;Resolvida;Cidadão;;24,1
+95;2026-09-09;9;2 Manhã (6h-12h);3 Quarta;2026-09;Capão Redondo;-23,6621;-46,78329;Outros;Alta;Resolvida;Cidadão;;10,6
+96;2026-11-02;23;4 Noite (18h-24h);1 Segunda;2026-11;Grajaú;-23,79398;-46,6702;Outros;Alta;Resolvida;Cidadão;;4,5
+97;2026-11-14;11;2 Manhã (6h-12h);6 Sábado;2026-11;Grajaú;-23,78977;-46,67037;Iluminação;Baixa;Em atendimento;Cidadão;;
+98;2026-09-17;1;1 Madrugada (0h-6h);4 Quinta;2026-09;Cidade Tiradentes;-23,5797;-46,40598;Assédio;Média;Resolvida;Cidadão;;78,7
+99;2026-09-06;4;1 Madrugada (0h-6h);7 Domingo;2026-09;Jardim Ângela;-23,72077;-46,77748;Roubo/furto;Média;Resolvida;Cidadão;;81,9
+100;2026-09-03;22;4 Noite (18h-24h);4 Quinta;2026-09;Brasilândia;-23,46491;-46,67815;Vandalismo;Média;Resolvida;Cidadão;;70,6
+101;2026-09-19;1;1 Madrugada (0h-6h);6 Sábado;2026-09;Brasilândia;-23,46683;-46,69648;Roubo/furto;Média;Resolvida;Cidadão;;74,3
+102;2026-09-02;17;3 Tarde (12h-18h);3 Quarta;2026-09;Parelheiros;-23,83161;-46,7362;Outros;Média;Resolvida;Cidadão;;69,3
+103;2026-08-23;12;3 Tarde (12h-18h);7 Domingo;2026-08;Jardim Ângela;-23,7095;-46,77097;Iluminação;Média;Resolvida;Cidadão;;62,2
+104;2026-09-23;7;2 Manhã (6h-12h);3 Quarta;2026-09;Jardim Ângela;-23,71898;-46,77257;Roubo/furto;Média;Em atendimento;Cidadão;;
+105;2026-09-24;21;4 Noite (18h-24h);4 Quinta;2026-09;Capão Redondo;-23,68014;-46,78435;Vandalismo;Baixa;Aberta;Cidadão;;
+106;2026-09-24;21;4 Noite (18h-24h);4 Quinta;2026-09;Parelheiros;-23,82615;-46,72874;Assédio;Alta;Resolvida;Cidadão;;8,5
+107;2026-08-27;20;4 Noite (18h-24h);4 Quinta;2026-08;Brasilândia;-23,47356;-46,69438;Roubo/furto;Média;Resolvida;Cidadão;;18,6
+108;2026-08-17;14;3 Tarde (12h-18h);1 Segunda;2026-08;Jardim Ângela;-23,71741;-46,77763;Assédio;Média;Resolvida;Cidadão;;64,1
+109;2026-09-23;1;1 Madrugada (0h-6h);3 Quarta;2026-09;Grajaú;-23,79325;-46,65836;Iluminação;Baixa;Resolvida;Cidadão;;130,1
+110;2026-10-08;14;3 Tarde (12h-18h);4 Quinta;2026-10;Parelheiros;-23,82756;-46,72786;Vandalismo;Baixa;Resolvida;Cidadão;;134,4
+111;2026-08-30;14;3 Tarde (12h-18h);7 Domingo;2026-08;Jardim Ângela;-23,70675;-46,76371;Roubo/furto;Alta;Resolvida;Cidadão;;2,5
+112;2026-09-11;5;1 Madrugada (0h-6h);5 Sexta;2026-09;Parelheiros;-23,82526;-46,71702;Roubo/furto;Média;Resolvida;Cidadão;;38,8
+113;2026-09-18;15;3 Tarde (12h-18h);5 Sexta;2026-09;Jardim São Luís;-23,65546;-46,73034;Vandalismo;Baixa;Resolvida;Cidadão;;191,6
+114;2026-10-15;17;3 Tarde (12h-18h);4 Quinta;2026-10;Parelheiros;-23,83064;-46,72754;Roubo/furto;Média;Resolvida;Cidadão;;47,9
+115;2026-08-22;20;4 Noite (18h-24h);6 Sábado;2026-08;Jardim Ângela;-23,72146;-46,77075;Roubo/furto;Média;Resolvida;Cidadão;;54,8
+116;2026-11-02;22;4 Noite (18h-24h);1 Segunda;2026-11;Capão Redondo;-23,66369;-46,78909;Vandalismo;Média;Aberta;Cidadão;;
+117;2026-08-23;23;4 Noite (18h-24h);7 Domingo;2026-08;Jardim Ângela;-23,71543;-46,76695;Roubo/furto;Alta;Resolvida;Cidadão;;11,7
+118;2026-08-20;21;4 Noite (18h-24h);4 Quinta;2026-08;Jardim São Luís;-23,64525;-46,73924;Roubo/furto;Média;Resolvida;Cidadão;;65,5
+119;2026-11-06;4;1 Madrugada (0h-6h);5 Sexta;2026-11;Grajaú;-23,78066;-46,66632;Assédio;Alta;Resolvida;Cidadão;;12,0
+120;2026-08-16;22;4 Noite (18h-24h);7 Domingo;2026-08;Itaquera;-23,54942;-46,45951;Iluminação;Baixa;Resolvida;Cidadão;;97,1
+121;2026-09-28;12;3 Tarde (12h-18h);1 Segunda;2026-09;Capão Redondo;-23,66605;-46,786;Assédio;Média;Resolvida;Cidadão;;60,6
+122;2026-09-27;18;4 Noite (18h-24h);7 Domingo;2026-09;Brasilândia;-23,47426;-46,68424;Roubo/furto;Média;Resolvida;Cidadão;;62,0
+123;2026-11-13;22;4 Noite (18h-24h);5 Sexta;2026-11;Capão Redondo;-23,67874;-46,78057;Roubo/furto;Alta;Resolvida;Cidadão;;8,7
+124;2026-10-07;18;4 Noite (18h-24h);3 Quarta;2026-10;Parelheiros;-23,83096;-46,71701;Outros;Baixa;Resolvida;Cidadão;;129,2
+125;2026-09-27;17;3 Tarde (12h-18h);7 Domingo;2026-09;Grajaú;-23,79516;-46,6584;Iluminação;Média;Resolvida;Cidadão;;71,5
+126;2026-09-03;21;4 Noite (18h-24h);4 Quinta;2026-09;Capão Redondo;-23,66977;-46,77947;Iluminação;Baixa;Resolvida;Cidadão;;46,0
+127;2026-10-16;18;4 Noite (18h-24h);5 Sexta;2026-10;Itaquera;-23,5462;-46,46099;Assédio;Média;Em atendimento;Cidadão;;
+128;2026-08-26;18;4 Noite (18h-24h);3 Quarta;2026-08;Cidade Tiradentes;-23,5849;-46,41657;Outros;Baixa;Resolvida;Cidadão;;42,8
+129;2026-09-22;3;1 Madrugada (0h-6h);2 Terça;2026-09;Capão Redondo;-23,67458;-46,77936;Assédio;Média;Resolvida;Cidadão;;85,9
+130;2026-10-13;22;4 Noite (18h-24h);2 Terça;2026-10;Itaquera;-23,53259;-46,44992;Roubo/furto;Alta;Resolvida;Cidadão;;4,8
+131;2026-10-27;20;4 Noite (18h-24h);2 Terça;2026-10;Parelheiros;-23,8174;-46,71765;Roubo/furto;Alta;Resolvida;Cidadão;;9,2
+132;2026-09-25;0;1 Madrugada (0h-6h);5 Sexta;2026-09;Jardim Ângela;-23,71483;-46,76582;Iluminação;Baixa;Em atendimento;Cidadão;;
+133;2026-08-25;23;4 Noite (18h-24h);2 Terça;2026-08;Brasilândia;-23,46651;-46,67814;Iluminação;Baixa;Resolvida;Cidadão;;132,2
+134;2026-10-17;18;4 Noite (18h-24h);6 Sábado;2026-10;Jardim São Luís;-23,65696;-46,74083;Iluminação;Média;Resolvida;Cidadão;;88,6
+135;2026-11-10;6;2 Manhã (6h-12h);2 Terça;2026-11;Grajaú;-23,7909;-46,66425;Outros;Baixa;Aberta;Cidadão;;
+136;2026-08-21;23;4 Noite (18h-24h);5 Sexta;2026-08;Jardim Ângela;-23,70735;-46,77771;Roubo/furto;Média;Resolvida;Cidadão;;48,6
+137;2026-09-13;18;4 Noite (18h-24h);7 Domingo;2026-09;Cidade Tiradentes;-23,58479;-46,41033;Vandalismo;Baixa;Aberta;Cidadão;;
+138;2026-11-02;23;4 Noite (18h-24h);1 Segunda;2026-11;Jardim São Luís;-23,65583;-46,74104;Vandalismo;Baixa;Resolvida;Cidadão;;235,5
+139;2026-09-17;1;1 Madrugada (0h-6h);4 Quinta;2026-09;Parelheiros;-23,83657;-46,72126;Roubo/furto;Média;Resolvida;Cidadão;;63,1
+140;2026-09-03;4;1 Madrugada (0h-6h);4 Quinta;2026-09;Parelheiros;-23,83268;-46,71961;Vandalismo;Baixa;Resolvida;Cidadão;;78,3
+141;2026-08-30;0;1 Madrugada (0h-6h);7 Domingo;2026-08;Itaquera;-23,5392;-46,45003;Roubo/furto;Média;Resolvida;Cidadão;;95,0
+142;2026-11-11;2;1 Madrugada (0h-6h);3 Quarta;2026-11;Cidade Tiradentes;-23,58572;-46,41572;Assédio;Alta;Resolvida;Cidadão;;4,2
+143;2026-09-22;15;3 Tarde (12h-18h);2 Terça;2026-09;Grajaú;-23,78663;-46,66776;Assédio;Média;Aberta;Cidadão;;
+144;2026-09-11;4;1 Madrugada (0h-6h);5 Sexta;2026-09;Grajaú;-23,77994;-46,65766;Vandalismo;Média;Aberta;Cidadão;;
+145;2026-08-24;23;4 Noite (18h-24h);1 Segunda;2026-08;Capão Redondo;-23,67337;-46,78724;Outros;Baixa;Resolvida;Cidadão;;208,8
+146;2026-11-04;7;2 Manhã (6h-12h);3 Quarta;2026-11;Grajaú;-23,7901;-46,66234;Assédio;Média;Aberta;Cidadão;;
+147;2026-09-27;23;4 Noite (18h-24h);7 Domingo;2026-09;Cidade Tiradentes;-23,5836;-46,40334;Iluminação;Baixa;Resolvida;Cidadão;;139,1
+148;2026-08-23;22;4 Noite (18h-24h);7 Domingo;2026-08;Jardim São Luís;-23,65397;-46,74443;Assédio;Alta;Resolvida;Cidadão;;4,0
+149;2026-09-24;11;2 Manhã (6h-12h);4 Quinta;2026-09;Itaquera;-23,5449;-46,44693;Roubo/furto;Média;Resolvida;Cidadão;;39,9
+150;2026-11-04;1;1 Madrugada (0h-6h);3 Quarta;2026-11;Grajaú;-23,793;-46,6738;Iluminação;Média;Resolvida;Cidadão;;44,8
+151;2026-08-21;2;1 Madrugada (0h-6h);5 Sexta;2026-08;Brasilândia;-23,47044;-46,67868;Iluminação;Baixa;Resolvida;Cidadão;;228,0
+152;2026-08-30;6;2 Manhã (6h-12h);7 Domingo;2026-08;Parelheiros;-23,82387;-46,73252;Assédio;Média;Resolvida;Cidadão;;31,8
+153;2026-09-04;9;2 Manhã (6h-12h);5 Sexta;2026-09;Jardim Ângela;-23,71362;-46,76958;Iluminação;Baixa;Resolvida;Cidadão;;82,1
+154;2026-08-24;16;3 Tarde (12h-18h);1 Segunda;2026-08;Brasilândia;-23,47355;-46,69339;Outros;Alta;Resolvida;Cidadão;;10,3
+155;2026-10-01;0;1 Madrugada (0h-6h);4 Quinta;2026-10;Jardim São Luís;-23,64985;-46,74761;Vandalismo;Média;Em atendimento;Cidadão;;
+156;2026-09-08;4;1 Madrugada (0h-6h);2 Terça;2026-09;Grajaú;-23,78937;-46,66851;Iluminação;Média;Resolvida;Cidadão;;27,2
+157;2026-11-08;3;1 Madrugada (0h-6h);7 Domingo;2026-11;Brasilândia;-23,47346;-46,68376;Roubo/furto;Média;Resolvida;Cidadão;;69,4
+158;2026-09-22;5;1 Madrugada (0h-6h);2 Terça;2026-09;Brasilândia;-23,47668;-46,68344;Vandalismo;Baixa;Resolvida;Cidadão;;106,4
+159;2026-08-21;6;2 Manhã (6h-12h);5 Sexta;2026-08;Jardim Ângela;-23,72205;-46,77477;Vandalismo;Média;Resolvida;Cidadão;;63,3
+160;2026-10-13;5;1 Madrugada (0h-6h);2 Terça;2026-10;Itaquera;-23,53506;-46,46249;Assédio;Média;Aberta;Cidadão;;
+161;2026-10-16;14;3 Tarde (12h-18h);5 Sexta;2026-10;Brasilândia;-23,47096;-46,68216;Roubo/furto;Média;Resolvida;Cidadão;;43,3
+162;2026-11-05;21;4 Noite (18h-24h);4 Quinta;2026-11;Grajaú;-23,78751;-46,6622;Outros;Média;Em atendimento;Cidadão;;
+163;2026-11-12;23;4 Noite (18h-24h);4 Quinta;2026-11;Grajaú;-23,77896;-46,6566;Assédio;Média;Resolvida;Cidadão;;42,2
+164;2026-11-01;4;1 Madrugada (0h-6h);7 Domingo;2026-11;Jardim Ângela;-23,70479;-46,76588;Roubo/furto;Média;Resolvida;Cidadão;;20,8
+165;2026-10-24;1;1 Madrugada (0h-6h);6 Sábado;2026-10;Capão Redondo;-23,6717;-46,77128;Outros;Média;Aberta;Cidadão;;
+166;2026-08-24;21;4 Noite (18h-24h);1 Segunda;2026-08;Jardim Ângela;-23,71708;-46,77733;Outros;Baixa;Em atendimento;Cidadão;;
+167;2026-08-23;1;1 Madrugada (0h-6h);7 Domingo;2026-08;Itaquera;-23,53873;-46,45441;Roubo/furto;Alta;Resolvida;Cidadão;;6,5
+168;2026-08-27;7;2 Manhã (6h-12h);4 Quinta;2026-08;Cidade Tiradentes;-23,58282;-46,40657;Roubo/furto;Média;Resolvida;Cidadão;;50,3
+169;2026-09-30;14;3 Tarde (12h-18h);3 Quarta;2026-09;Brasilândia;-23,47153;-46,69126;Roubo/furto;Alta;Resolvida;Cidadão;;2,2
+170;2026-09-11;10;2 Manhã (6h-12h);5 Sexta;2026-09;Brasilândia;-23,46098;-46,68801;Roubo/furto;Média;Resolvida;Cidadão;;79,0
+171;2026-10-04;18;4 Noite (18h-24h);7 Domingo;2026-10;Cidade Tiradentes;-23,59096;-46,41713;Roubo/furto;Média;Em atendimento;Cidadão;;
+172;2026-11-04;14;3 Tarde (12h-18h);3 Quarta;2026-11;Parelheiros;-23,82285;-46,71718;Roubo/furto;Média;Aberta;Cidadão;;
+173;2026-10-25;9;2 Manhã (6h-12h);7 Domingo;2026-10;Brasilândia;-23,47072;-46,69023;Outros;Baixa;Em atendimento;Cidadão;;
+174;2026-08-26;18;4 Noite (18h-24h);3 Quarta;2026-08;Grajaú;-23,78787;-46,66996;Assédio;Média;Resolvida;Cidadão;;59,9
+175;2026-10-03;1;1 Madrugada (0h-6h);6 Sábado;2026-10;Jardim São Luís;-23,656;-46,72965;Assédio;Média;Em atendimento;Cidadão;;
+176;2026-08-16;23;4 Noite (18h-24h);7 Domingo;2026-08;Grajaú;-23,78903;-46,67244;Iluminação;Baixa;Resolvida;Cidadão;;167,3
+177;2026-08-21;11;2 Manhã (6h-12h);5 Sexta;2026-08;Grajaú;-23,78942;-46,65598;Outros;Baixa;Aberta;Cidadão;;
+178;2026-09-13;3;1 Madrugada (0h-6h);7 Domingo;2026-09;Parelheiros;-23,82124;-46,72685;Roubo/furto;Média;Resolvida;Cidadão;;38,5
+179;2026-09-08;0;1 Madrugada (0h-6h);2 Terça;2026-09;Itaquera;-23,53806;-46,46291;Assédio;Alta;Resolvida;Cidadão;;8,1
+180;2026-08-27;21;4 Noite (18h-24h);4 Quinta;2026-08;Itaquera;-23,54271;-46,45161;Iluminação;Média;Resolvida;Cidadão;;18,0
+181;2026-09-18;4;1 Madrugada (0h-6h);5 Sexta;2026-09;Brasilândia;-23,46952;-46,6803;Assédio;Média;Resolvida;Cidadão;;80,4
+182;2026-09-02;23;4 Noite (18h-24h);3 Quarta;2026-09;Cidade Tiradentes;-23,58214;-46,41083;Assédio;Alta;Resolvida;Cidadão;;9,7
+183;2026-08-29;2;1 Madrugada (0h-6h);6 Sábado;2026-08;Itaquera;-23,54039;-46,45858;Vandalismo;Baixa;Aberta;Cidadão;;
+184;2026-09-09;21;4 Noite (18h-24h);3 Quarta;2026-09;Cidade Tiradentes;-23,58899;-46,41021;Iluminação;Baixa;Em atendimento;Cidadão;;
+185;2026-09-20;1;1 Madrugada (0h-6h);7 Domingo;2026-09;Grajaú;-23,78861;-46,67447;Roubo/furto;Média;Resolvida;Cidadão;;51,2
+186;2026-09-28;4;1 Madrugada (0h-6h);1 Segunda;2026-09;Jardim Ângela;-23,70358;-46,76402;Assédio;Média;Resolvida;Cidadão;;16,7
+187;2026-10-28;0;1 Madrugada (0h-6h);3 Quarta;2026-10;Itaquera;-23,54722;-46,45189;Roubo/furto;Média;Resolvida;Cidadão;;71,2
+188;2026-11-04;0;1 Madrugada (0h-6h);3 Quarta;2026-11;Brasilândia;-23,46436;-46,68644;Assédio;Média;Resolvida;Cidadão;;59,2
+189;2026-10-15;6;2 Manhã (6h-12h);4 Quinta;2026-10;Itaquera;-23,53754;-46,46474;Assédio;Alta;Resolvida;Cidadão;;8,3
+190;2026-11-12;18;4 Noite (18h-24h);4 Quinta;2026-11;Brasilândia;-23,47603;-46,68842;Vandalismo;Baixa;Aberta;Cidadão;;
+191;2026-09-02;11;2 Manhã (6h-12h);3 Quarta;2026-09;Jardim Ângela;-23,71499;-46,76173;Outros;Alta;Resolvida;Cidadão;;7,1
+192;2026-09-11;16;3 Tarde (12h-18h);5 Sexta;2026-09;Brasilândia;-23,47116;-46,68953;Assédio;Alta;Resolvida;Cidadão;;2,2
+193;2026-11-06;8;2 Manhã (6h-12h);5 Sexta;2026-11;Jardim Ângela;-23,71056;-46,76567;Iluminação;Média;Resolvida;Cidadão;;22,9
+194;2026-09-06;7;2 Manhã (6h-12h);7 Domingo;2026-09;Grajaú;-23,78631;-46,66109;Outros;Baixa;Resolvida;Cidadão;;194,9
+195;2026-11-06;19;4 Noite (18h-24h);5 Sexta;2026-11;Itaquera;-23,54597;-46,45018;Iluminação;Média;Aberta;Cidadão;;
+196;2026-10-06;15;3 Tarde (12h-18h);2 Terça;2026-10;Capão Redondo;-23,66683;-46,78558;Roubo/furto;Alta;Resolvida;Cidadão;;4,4
+197;2026-11-08;21;4 Noite (18h-24h);7 Domingo;2026-11;Jardim São Luís;-23,64701;-46,74026;Outros;Baixa;Em atendimento;Cidadão;;
+198;2026-09-26;7;2 Manhã (6h-12h);6 Sábado;2026-09;Itaquera;-23,53151;-46,45561;Iluminação;Baixa;Resolvida;Cidadão;;137,5
+199;2026-11-04;12;3 Tarde (12h-18h);3 Quarta;2026-11;Cidade Tiradentes;-23,58632;-46,41715;Roubo/furto;Média;Aberta;Cidadão;;
+200;2026-10-06;12;3 Tarde (12h-18h);2 Terça;2026-10;Cidade Tiradentes;-23,58517;-46,41835;Iluminação;Média;Resolvida;Cidadão;;70,7
+201;2026-09-20;5;1 Madrugada (0h-6h);7 Domingo;2026-09;Brasilândia;-23,46615;-46,68973;Outros;Baixa;Resolvida;Cidadão;;51,3
+202;2026-10-27;21;4 Noite (18h-24h);2 Terça;2026-10;Parelheiros;-23,83566;-46,72143;Vandalismo;Baixa;Resolvida;Cidadão;;43,1
+203;2026-09-03;0;1 Madrugada (0h-6h);4 Quinta;2026-09;Jardim Ângela;-23,71476;-46,76554;Assédio;Alta;Resolvida;Cidadão;;11,5
+204;2026-09-29;10;2 Manhã (6h-12h);2 Terça;2026-09;Grajaú;-23,79508;-46,67128;Roubo/furto;Média;Resolvida;Cidadão;;92,8
+205;2026-09-04;2;1 Madrugada (0h-6h);5 Sexta;2026-09;Jardim Ângela;-23,70227;-46,77509;Outros;Baixa;Resolvida;Cidadão;;127,0
+206;2026-10-28;21;4 Noite (18h-24h);3 Quarta;2026-10;Capão Redondo;-23,66763;-46,76945;Vandalismo;Baixa;Em atendimento;Cidadão;;
+207;2026-08-16;1;1 Madrugada (0h-6h);7 Domingo;2026-08;Cidade Tiradentes;-23,58905;-46,40501;Iluminação;Média;Resolvida;Cidadão;;38,9
+208;2026-09-10;4;1 Madrugada (0h-6h);4 Quinta;2026-09;Itaquera;-23,54012;-46,45878;Iluminação;Média;Resolvida;Cidadão;;33,7
+209;2026-09-05;2;1 Madrugada (0h-6h);6 Sábado;2026-09;Jardim Ângela;-23,71601;-46,76081;Roubo/furto;Média;Em atendimento;Cidadão;;
+210;2026-09-23;21;4 Noite (18h-24h);3 Quarta;2026-09;Brasilândia;-23,47256;-46,69552;Iluminação;Média;Em atendimento;Cidadão;;
+211;2026-10-01;2;1 Madrugada (0h-6h);4 Quinta;2026-10;Cidade Tiradentes;-23,58856;-46,39987;Roubo/furto;Alta;Resolvida;Cidadão;;8,3
+212;2026-11-07;21;4 Noite (18h-24h);6 Sábado;2026-11;Brasilândia;-23,47561;-46,69055;Outros;Média;Aberta;Cidadão;;
+213;2026-09-09;22;4 Noite (18h-24h);3 Quarta;2026-09;Capão Redondo;-23,67797;-46,77027;Outros;Média;Em atendimento;Cidadão;;
+214;2026-10-07;18;4 Noite (18h-24h);3 Quarta;2026-10;Grajaú;-23,77677;-46,67192;Roubo/furto;Alta;Resolvida;Cidadão;;3,5
+215;2026-08-29;7;2 Manhã (6h-12h);6 Sábado;2026-08;Cidade Tiradentes;-23,59163;-46,41829;Outros;Alta;Resolvida;Cidadão;;10,2
+216;2026-10-19;20;4 Noite (18h-24h);1 Segunda;2026-10;Capão Redondo;-23,66412;-46,77849;Roubo/furto;Média;Resolvida;Cidadão;;16,9
+217;2026-08-19;11;2 Manhã (6h-12h);3 Quarta;2026-08;Jardim Ângela;-23,721;-46,77201;Vandalismo;Média;Em atendimento;Cidadão;;
+218;2026-10-02;18;4 Noite (18h-24h);5 Sexta;2026-10;Jardim Ângela;-23,70244;-46,77389;Iluminação;Média;Resolvida;Cidadão;;40,5
+219;2026-09-28;15;3 Tarde (12h-18h);1 Segunda;2026-09;Grajaú;-23,79025;-46,67004;Iluminação;Baixa;Resolvida;Cidadão;;131,2
+220;2026-09-26;21;4 Noite (18h-24h);6 Sábado;2026-09;Grajaú;-23,79241;-46,66845;Iluminação;Baixa;Resolvida;Cidadão;;212,5
+221;2026-10-21;20;4 Noite (18h-24h);3 Quarta;2026-10;Cidade Tiradentes;-23,57462;-46,40925;Roubo/furto;Média;Resolvida;Cidadão;;52,5
+222;2026-09-11;13;3 Tarde (12h-18h);5 Sexta;2026-09;Parelheiros;-23,83599;-46,7271;Roubo/furto;Média;Resolvida;Cidadão;;43,2
+223;2026-11-13;21;4 Noite (18h-24h);5 Sexta;2026-11;Capão Redondo;-23,67661;-46,78208;Iluminação;Média;Aberta;Cidadão;;
+224;2026-09-24;1;1 Madrugada (0h-6h);4 Quinta;2026-09;Jardim Ângela;-23,72073;-46,77071;Iluminação;Baixa;Resolvida;Cidadão;;148,9
+225;2026-08-27;19;4 Noite (18h-24h);4 Quinta;2026-08;Capão Redondo;-23,67444;-46,76966;Iluminação;Baixa;Resolvida;Cidadão;;55,7
+226;2026-10-27;3;1 Madrugada (0h-6h);2 Terça;2026-10;Parelheiros;-23,83622;-46,72273;Iluminação;Baixa;Resolvida;Cidadão;;44,2
+227;2026-10-26;18;4 Noite (18h-24h);1 Segunda;2026-10;Brasilândia;-23,46027;-46,69063;Iluminação;Média;Aberta;Cidadão;;
+228;2026-10-07;17;3 Tarde (12h-18h);3 Quarta;2026-10;Parelheiros;-23,82283;-46,731;Iluminação;Baixa;Resolvida;Cidadão;;144,6
+229;2026-08-20;2;1 Madrugada (0h-6h);4 Quinta;2026-08;Jardim Ângela;-23,70769;-46,76704;Iluminação;Média;Resolvida;Cidadão;;79,4
+230;2026-10-12;23;4 Noite (18h-24h);1 Segunda;2026-10;Brasilândia;-23,47435;-46,69597;Iluminação;Média;Resolvida;Cidadão;;61,6
+231;2026-08-26;19;4 Noite (18h-24h);3 Quarta;2026-08;Grajaú;-23,78199;-46,67437;Iluminação;Média;Resolvida;Cidadão;;26,5
+232;2026-09-19;6;2 Manhã (6h-12h);6 Sábado;2026-09;Capão Redondo;-23,67186;-46,77717;Assédio;Alta;Resolvida;Cidadão;;3,9
+233;2026-11-07;19;4 Noite (18h-24h);6 Sábado;2026-11;Jardim São Luís;-23,6565;-46,73576;Iluminação;Média;Aberta;Cidadão;;
+234;2026-10-23;13;3 Tarde (12h-18h);5 Sexta;2026-10;Jardim Ângela;-23,70676;-46,76638;Outros;Baixa;Resolvida;Cidadão;;108,3
+235;2026-10-21;23;4 Noite (18h-24h);3 Quarta;2026-10;Brasilândia;-23,45944;-46,69105;Iluminação;Baixa;Resolvida;Cidadão;;81,9
+236;2026-08-18;19;4 Noite (18h-24h);2 Terça;2026-08;Cidade Tiradentes;-23,57351;-46,40477;Assédio;Média;Resolvida;Cidadão;;60,1
+237;2026-08-20;16;3 Tarde (12h-18h);4 Quinta;2026-08;Grajaú;-23,77651;-46,65891;Assédio;Média;Resolvida;Cidadão;;81,2
+238;2026-11-04;8;2 Manhã (6h-12h);3 Quarta;2026-11;Grajaú;-23,79132;-46,65844;Assédio;Média;Resolvida;Cidadão;;75,4
+239;2026-08-17;5;1 Madrugada (0h-6h);1 Segunda;2026-08;Parelheiros;-23,83215;-46,7236;Roubo/furto;Alta;Resolvida;Cidadão;;7,8
+240;2026-10-16;1;1 Madrugada (0h-6h);5 Sexta;2026-10;Capão Redondo;-23,66828;-46,78665;Outros;Baixa;Resolvida;Cidadão;;132,4
+241;2026-10-25;11;2 Manhã (6h-12h);7 Domingo;2026-10;Parelheiros;-23,82399;-46,72188;Iluminação;Baixa;Resolvida;Cidadão;;133,0
+242;2026-08-24;1;1 Madrugada (0h-6h);1 Segunda;2026-08;Capão Redondo;-23,67042;-46,7787;Assédio;Média;Em atendimento;Cidadão;;
+243;2026-10-23;11;2 Manhã (6h-12h);5 Sexta;2026-10;Jardim São Luís;-23,64461;-46,72906;Roubo/furto;Alta;Em atendimento;Cidadão;;
+244;2026-10-22;23;4 Noite (18h-24h);4 Quinta;2026-10;Itaquera;-23,54981;-46,45464;Iluminação;Baixa;Resolvida;Cidadão;;214,9
+245;2026-10-03;5;1 Madrugada (0h-6h);6 Sábado;2026-10;Jardim São Luís;-23,64423;-46,73198;Iluminação;Baixa;Resolvida;Cidadão;;136,8
+246;2026-10-31;7;2 Manhã (6h-12h);6 Sábado;2026-10;Capão Redondo;-23,67818;-46,77467;Roubo/furto;Alta;Resolvida;Cidadão;;4,4
+247;2026-10-21;3;1 Madrugada (0h-6h);3 Quarta;2026-10;Brasilândia;-23,47035;-46,69044;Assédio;Média;Resolvida;Cidadão;;47,5
+248;2026-10-22;23;4 Noite (18h-24h);4 Quinta;2026-10;Cidade Tiradentes;-23,58698;-46,41449;Iluminação;Baixa;Resolvida;Cidadão;;86,6
+249;2026-10-07;17;3 Tarde (12h-18h);3 Quarta;2026-10;Parelheiros;-23,82393;-46,72314;Roubo/furto;Alta;Aberta;Cidadão;;
+250;2026-09-16;6;2 Manhã (6h-12h);3 Quarta;2026-09;Cidade Tiradentes;-23,57444;-46,4038;Assédio;Média;Resolvida;Cidadão;;89,7
+251;2026-10-08;9;2 Manhã (6h-12h);4 Quinta;2026-10;Cidade Tiradentes;-23,58914;-46,40425;Assédio;Alta;Resolvida;Cidadão;;3,2
+252;2026-08-17;16;3 Tarde (12h-18h);1 Segunda;2026-08;Jardim Ângela;-23,70569;-46,76556;Assédio;Média;Resolvida;Cidadão;;79,8
+253;2026-11-04;15;3 Tarde (12h-18h);3 Quarta;2026-11;Jardim São Luís;-23,65172;-46,74776;Assédio;Média;Resolvida;Cidadão;;20,8
+254;2026-10-20;17;3 Tarde (12h-18h);2 Terça;2026-10;Jardim São Luís;-23,64591;-46,74016;Iluminação;Baixa;Em atendimento;Cidadão;;
+255;2026-09-13;1;1 Madrugada (0h-6h);7 Domingo;2026-09;Cidade Tiradentes;-23,58956;-46,41089;Assédio;Média;Resolvida;Cidadão;;18,9
+256;2026-09-16;19;4 Noite (18h-24h);3 Quarta;2026-09;Grajaú;-23,77927;-46,66008;Roubo/furto;Média;Resolvida;Cidadão;;46,7
+257;2026-09-21;8;2 Manhã (6h-12h);1 Segunda;2026-09;Grajaú;-23,77772;-46,65528;Vandalismo;Média;Resolvida;Cidadão;;19,3
+258;2026-09-23;3;1 Madrugada (0h-6h);3 Quarta;2026-09;Grajaú;-23,78268;-46,66659;Iluminação;Média;Resolvida;Cidadão;;94,2
+259;2026-09-27;9;2 Manhã (6h-12h);7 Domingo;2026-09;Jardim Ângela;-23,71954;-46,76359;Roubo/furto;Média;Resolvida;Cidadão;;85,8
+260;2026-09-07;10;2 Manhã (6h-12h);1 Segunda;2026-09;Grajaú;-23,79553;-46,67455;Assédio;Alta;Resolvida;Cidadão;;4,1
+261;2026-09-06;11;2 Manhã (6h-12h);7 Domingo;2026-09;Jardim Ângela;-23,71528;-46,77529;Vandalismo;Média;Resolvida;Cidadão;;34,6
+262;2026-08-22;11;2 Manhã (6h-12h);6 Sábado;2026-08;Grajaú;-23,79079;-46,67365;Assédio;Alta;Resolvida;Cidadão;;10,9
+263;2026-08-30;19;4 Noite (18h-24h);7 Domingo;2026-08;Grajaú;-23,78079;-46,66695;Assédio;Média;Aberta;Cidadão;;
+264;2026-11-07;2;1 Madrugada (0h-6h);6 Sábado;2026-11;Brasilândia;-23,46057;-46,68548;Outros;Média;Em atendimento;Cidadão;;
+265;2026-08-20;21;4 Noite (18h-24h);4 Quinta;2026-08;Brasilândia;-23,4657;-46,69258;Roubo/furto;Média;Resolvida;Cidadão;;26,1
+266;2026-09-04;23;4 Noite (18h-24h);5 Sexta;2026-09;Capão Redondo;-23,66832;-46,77828;Vandalismo;Média;Resolvida;Cidadão;;28,7
+267;2026-08-24;19;4 Noite (18h-24h);1 Segunda;2026-08;Parelheiros;-23,82883;-46,731;Assédio;Média;Resolvida;Cidadão;;71,2
+268;2026-09-15;4;1 Madrugada (0h-6h);2 Terça;2026-09;Itaquera;-23,53388;-46,44771;Iluminação;Média;Resolvida;Cidadão;;72,1
+269;2026-09-22;16;3 Tarde (12h-18h);2 Terça;2026-09;Jardim Ângela;-23,71559;-46,77922;Iluminação;Baixa;Resolvida;Cidadão;;88,0
+270;2026-11-03;15;3 Tarde (12h-18h);2 Terça;2026-11;Jardim São Luís;-23,65763;-46,73553;Assédio;Média;Aberta;Cidadão;;
+271;2026-11-05;3;1 Madrugada (0h-6h);4 Quinta;2026-11;Grajaú;-23,79126;-46,67082;Assédio;Média;Resolvida;Cidadão;;69,2
+272;2026-11-13;4;1 Madrugada (0h-6h);5 Sexta;2026-11;Capão Redondo;-23,66191;-46,77982;Roubo/furto;Média;Resolvida;Cidadão;;24,0
+273;2026-08-16;4;1 Madrugada (0h-6h);7 Domingo;2026-08;Cidade Tiradentes;-23,58654;-46,40987;Vandalismo;Baixa;Resolvida;Cidadão;;101,6
+274;2026-09-29;15;3 Tarde (12h-18h);2 Terça;2026-09;Capão Redondo;-23,66745;-46,77417;Outros;Baixa;Resolvida;Cidadão;;199,8
+275;2026-09-28;6;2 Manhã (6h-12h);1 Segunda;2026-09;Jardim São Luís;-23,66008;-46,74378;Iluminação;Média;Resolvida;Cidadão;;32,5
+276;2026-09-22;5;1 Madrugada (0h-6h);2 Terça;2026-09;Brasilândia;-23,46223;-46,68701;Vandalismo;Média;Resolvida;Cidadão;;45,4
+277;2026-09-13;23;4 Noite (18h-24h);7 Domingo;2026-09;Capão Redondo;-23,66724;-46,78236;Roubo/furto;Média;Resolvida;Cidadão;;52,0
+278;2026-09-13;3;1 Madrugada (0h-6h);7 Domingo;2026-09;Cidade Tiradentes;-23,59103;-46,41852;Outros;Baixa;Resolvida;Cidadão;;166,9
+279;2026-08-21;0;1 Madrugada (0h-6h);5 Sexta;2026-08;Parelheiros;-23,83237;-46,72286;Vandalismo;Baixa;Resolvida;Cidadão;;207,9
+280;2026-09-17;9;2 Manhã (6h-12h);4 Quinta;2026-09;Capão Redondo;-23,66364;-46,77621;Iluminação;Baixa;Resolvida;Cidadão;;226,5
+281;2026-09-05;11;2 Manhã (6h-12h);6 Sábado;2026-09;Grajaú;-23,77605;-46,67466;Iluminação;Média;Resolvida;Cidadão;;36,8
+282;2026-10-23;2;1 Madrugada (0h-6h);5 Sexta;2026-10;Itaquera;-23,5376;-46,46095;Outros;Média;Resolvida;Cidadão;;34,1
+283;2026-09-25;1;1 Madrugada (0h-6h);5 Sexta;2026-09;Capão Redondo;-23,66796;-46,7834;Outros;Baixa;Resolvida;Cidadão;;85,6
+284;2026-08-23;20;4 Noite (18h-24h);7 Domingo;2026-08;Cidade Tiradentes;-23,58268;-46,40647;Roubo/furto;Média;Resolvida;Cidadão;;45,2
+285;2026-09-20;18;4 Noite (18h-24h);7 Domingo;2026-09;Grajaú;-23,79369;-46,66444;Vandalismo;Baixa;Resolvida;Cidadão;;211,0
+286;2026-08-18;22;4 Noite (18h-24h);2 Terça;2026-08;Capão Redondo;-23,66821;-46,78379;Roubo/furto;Alta;Resolvida;Cidadão;;11,2
+287;2026-11-10;3;1 Madrugada (0h-6h);2 Terça;2026-11;Brasilândia;-23,45967;-46,68526;Assédio;Alta;Em atendimento;Cidadão;;
+288;2026-10-07;3;1 Madrugada (0h-6h);3 Quarta;2026-10;Jardim São Luís;-23,64946;-46,73819;Iluminação;Baixa;Resolvida;Cidadão;;209,3
+289;2026-10-28;20;4 Noite (18h-24h);3 Quarta;2026-10;Itaquera;-23,53051;-46,46493;Roubo/furto;Média;Resolvida;Cidadão;;55,3
+290;2026-11-05;7;2 Manhã (6h-12h);4 Quinta;2026-11;Capão Redondo;-23,66252;-46,78287;Outros;Média;Resolvida;Cidadão;;63,0
+291;2026-09-18;14;3 Tarde (12h-18h);5 Sexta;2026-09;Itaquera;-23,54629;-46,45428;Roubo/furto;Alta;Resolvida;Cidadão;;5,6
+292;2026-08-27;5;1 Madrugada (0h-6h);4 Quinta;2026-08;Grajaú;-23,79252;-46,66077;Roubo/furto;Média;Resolvida;Cidadão;;21,1
+293;2026-10-05;8;2 Manhã (6h-12h);1 Segunda;2026-10;Itaquera;-23,54383;-46,4588;Roubo/furto;Alta;Aberta;Cidadão;;
+294;2026-11-03;3;1 Madrugada (0h-6h);2 Terça;2026-11;Grajaú;-23,79353;-46,67321;Roubo/furto;Alta;Resolvida;Cidadão;;7,0
+295;2026-08-30;20;4 Noite (18h-24h);7 Domingo;2026-08;Grajaú;-23,78784;-46,67331;Iluminação;Baixa;Resolvida;Cidadão;;95,5
+296;2026-10-14;17;3 Tarde (12h-18h);3 Quarta;2026-10;Jardim São Luís;-23,65762;-46,74363;Iluminação;Baixa;Resolvida;Cidadão;;70,6
+297;2026-09-20;5;1 Madrugada (0h-6h);7 Domingo;2026-09;Grajaú;-23,79057;-46,67007;Roubo/furto;Alta;Resolvida;Cidadão;;2,6
+298;2026-10-20;13;3 Tarde (12h-18h);2 Terça;2026-10;Brasilândia;-23,47226;-46,6846;Vandalismo;Baixa;Resolvida;Cidadão;;229,6
+299;2026-09-20;21;4 Noite (18h-24h);7 Domingo;2026-09;Jardim Ângela;-23,71619;-46,76874;Roubo/furto;Média;Resolvida;Cidadão;;62,9
+300;2026-10-23;23;4 Noite (18h-24h);5 Sexta;2026-10;Jardim Ângela;-23,71238;-46,76928;Roubo/furto;Média;Resolvida;Cidadão;;71,1
+301;2026-10-10;21;4 Noite (18h-24h);6 Sábado;2026-10;Capão Redondo;-23,6779;-46,76945;Vandalismo;Baixa;Resolvida;Cidadão;;226,1
+302;2026-09-05;0;1 Madrugada (0h-6h);6 Sábado;2026-09;Cidade Tiradentes;-23,58343;-46,41337;Iluminação;Média;Resolvida;Cidadão;;72,2
+303;2026-09-23;19;4 Noite (18h-24h);3 Quarta;2026-09;Itaquera;-23,53683;-46,4517;Vandalismo;Baixa;Resolvida;Cidadão;;85,4
+304;2026-08-30;13;3 Tarde (12h-18h);7 Domingo;2026-08;Grajaú;-23,77821;-46,66663;Roubo/furto;Média;Resolvida;Cidadão;;89,8
+305;2026-09-29;19;4 Noite (18h-24h);2 Terça;2026-09;Itaquera;-23,5483;-46,45062;Roubo/furto;Alta;Resolvida;Cidadão;;8,3
+306;2026-08-28;0;1 Madrugada (0h-6h);5 Sexta;2026-08;Grajaú;-23,78055;-46,65569;Outros;Baixa;Resolvida;Cidadão;;117,5
+307;2026-11-02;5;1 Madrugada (0h-6h);1 Segunda;2026-11;Grajaú;-23,78185;-46,67058;Outros;Média;Resolvida;Cidadão;;59,9
+308;2026-08-20;17;3 Tarde (12h-18h);4 Quinta;2026-08;Jardim Ângela;-23,71254;-46,77489;Assédio;Alta;Resolvida;Cidadão;;12,0
+309;2026-10-27;8;2 Manhã (6h-12h);2 Terça;2026-10;Grajaú;-23,78594;-46,66548;Roubo/furto;Média;Resolvida;Cidadão;;31,3
+310;2026-09-18;6;2 Manhã (6h-12h);5 Sexta;2026-09;Cidade Tiradentes;-23,57798;-46,41875;Assédio;Média;Aberta;Cidadão;;
+311;2026-08-20;21;4 Noite (18h-24h);4 Quinta;2026-08;Cidade Tiradentes;-23,58871;-46,416;Roubo/furto;Média;Resolvida;Cidadão;;34,3
+312;2026-09-16;4;1 Madrugada (0h-6h);3 Quarta;2026-09;Jardim Ângela;-23,70905;-46,77289;Iluminação;Baixa;Resolvida;Cidadão;;74,0
+313;2026-09-18;17;3 Tarde (12h-18h);5 Sexta;2026-09;Jardim São Luís;-23,6587;-46,74343;Outros;Alta;Aberta;Cidadão;;
+314;2026-09-07;3;1 Madrugada (0h-6h);1 Segunda;2026-09;Brasilândia;-23,46549;-46,68721;Vandalismo;Baixa;Resolvida;Cidadão;;59,2
+315;2026-08-28;10;2 Manhã (6h-12h);5 Sexta;2026-08;Brasilândia;-23,46655;-46,68073;Iluminação;Média;Resolvida;Cidadão;;83,4
+316;2026-08-31;1;1 Madrugada (0h-6h);1 Segunda;2026-08;Jardim São Luís;-23,66066;-46,74153;Vandalismo;Média;Resolvida;Cidadão;;33,9
+317;2026-09-22;17;3 Tarde (12h-18h);2 Terça;2026-09;Brasilândia;-23,46619;-46,68313;Roubo/furto;Alta;Resolvida;Cidadão;;3,7
+318;2026-09-13;5;1 Madrugada (0h-6h);7 Domingo;2026-09;Brasilândia;-23,47783;-46,68982;Iluminação;Média;Resolvida;Cidadão;;51,2
+319;2026-10-21;21;4 Noite (18h-24h);3 Quarta;2026-10;Jardim Ângela;-23,70851;-46,77249;Iluminação;Baixa;Resolvida;Cidadão;;137,0
+320;2026-11-04;16;3 Tarde (12h-18h);3 Quarta;2026-11;Jardim Ângela;-23,7167;-46,77005;Assédio;Média;Resolvida;Cidadão;;38,2
+321;2026-09-03;20;4 Noite (18h-24h);4 Quinta;2026-09;Itaquera;-23,53855;-46,46064;Vandalismo;Baixa;Resolvida;Cidadão;;140,2
+322;2026-09-29;16;3 Tarde (12h-18h);2 Terça;2026-09;Itaquera;-23,53562;-46,45507;Assédio;Alta;Aberta;Cidadão;;
+323;2026-08-23;20;4 Noite (18h-24h);7 Domingo;2026-08;Grajaú;-23,79034;-46,65776;Outros;Média;Resolvida;Cidadão;;17,0
+324;2026-10-30;20;4 Noite (18h-24h);5 Sexta;2026-10;Jardim Ângela;-23,70745;-46,76702;Roubo/furto;Média;Em atendimento;Cidadão;;
+325;2026-10-24;18;4 Noite (18h-24h);6 Sábado;2026-10;Cidade Tiradentes;-23,58806;-46,41801;Outros;Alta;Em atendimento;Cidadão;;
+326;2026-08-30;15;3 Tarde (12h-18h);7 Domingo;2026-08;Brasilândia;-23,46745;-46,67795;Outros;Baixa;Resolvida;Cidadão;;95,7
+327;2026-08-20;21;4 Noite (18h-24h);4 Quinta;2026-08;Parelheiros;-23,81862;-46,71715;Roubo/furto;Média;Resolvida;Cidadão;;78,5
+328;2026-10-29;4;1 Madrugada (0h-6h);4 Quinta;2026-10;Cidade Tiradentes;-23,58725;-46,40233;Outros;Baixa;Em atendimento;Cidadão;;
+329;2026-09-02;18;4 Noite (18h-24h);3 Quarta;2026-09;Jardim Ângela;-23,70953;-46,7632;Iluminação;Baixa;Resolvida;Cidadão;;128,2
+330;2026-10-10;19;4 Noite (18h-24h);6 Sábado;2026-10;Jardim Ângela;-23,71565;-46,78075;Roubo/furto;Média;Resolvida;Cidadão;;91,9
+331;2026-09-17;18;4 Noite (18h-24h);4 Quinta;2026-09;Cidade Tiradentes;-23,58151;-46,41484;Roubo/furto;Média;Resolvida;Cidadão;;19,6
+332;2026-09-12;5;1 Madrugada (0h-6h);6 Sábado;2026-09;Itaquera;-23,54739;-46,44895;Outros;Média;Resolvida;Cidadão;;59,1
+333;2026-11-08;0;1 Madrugada (0h-6h);7 Domingo;2026-11;Jardim São Luís;-23,66052;-46,73185;Roubo/furto;Média;Resolvida;Cidadão;;51,9
+334;2026-09-21;4;1 Madrugada (0h-6h);1 Segunda;2026-09;Jardim Ângela;-23,71616;-46,76331;Assédio;Média;Resolvida;Cidadão;;86,4
+335;2026-09-29;5;1 Madrugada (0h-6h);2 Terça;2026-09;Grajaú;-23,79456;-46,66249;Roubo/furto;Alta;Resolvida;Cidadão;;8,4
+336;2026-11-03;19;4 Noite (18h-24h);2 Terça;2026-11;Jardim Ângela;-23,72064;-46,76893;Outros;Média;Em atendimento;Cidadão;;
+337;2026-11-13;0;1 Madrugada (0h-6h);5 Sexta;2026-11;Cidade Tiradentes;-23,58375;-46,41656;Outros;Baixa;Resolvida;Cidadão;;41,0
+338;2026-11-03;19;4 Noite (18h-24h);2 Terça;2026-11;Capão Redondo;-23,67455;-46,78341;Vandalismo;Baixa;Aberta;Cidadão;;
+339;2026-10-28;18;4 Noite (18h-24h);3 Quarta;2026-10;Itaquera;-23,53939;-46,46583;Roubo/furto;Média;Aberta;Cidadão;;
+340;2026-10-18;18;4 Noite (18h-24h);7 Domingo;2026-10;Jardim Ângela;-23,71335;-46,77646;Vandalismo;Baixa;Resolvida;Cidadão;;161,7
+341;2026-10-30;17;3 Tarde (12h-18h);5 Sexta;2026-10;Grajaú;-23,77978;-46,67004;Iluminação;Baixa;Resolvida;Cidadão;;123,6
+342;2026-08-30;18;4 Noite (18h-24h);7 Domingo;2026-08;Capão Redondo;-23,68136;-46,77246;Roubo/furto;Média;Resolvida;Cidadão;;91,2
+343;2026-08-29;14;3 Tarde (12h-18h);6 Sábado;2026-08;Capão Redondo;-23,66622;-46,77352;Vandalismo;Média;Resolvida;Cidadão;;67,1
+344;2026-10-31;4;1 Madrugada (0h-6h);6 Sábado;2026-10;Jardim Ângela;-23,70265;-46,76106;Vandalismo;Baixa;Resolvida;Cidadão;;143,8
+345;2026-09-03;11;2 Manhã (6h-12h);4 Quinta;2026-09;Grajaú;-23,77651;-46,65959;Iluminação;Média;Resolvida;Cidadão;;76,6
+346;2026-11-13;5;1 Madrugada (0h-6h);5 Sexta;2026-11;Brasilândia;-23,47094;-46,69127;Iluminação;Média;Resolvida;Cidadão;;36,4
+347;2026-09-21;19;4 Noite (18h-24h);1 Segunda;2026-09;Itaquera;-23,54695;-46,46433;Roubo/furto;Média;Resolvida;Cidadão;;58,3
+348;2026-10-19;23;4 Noite (18h-24h);1 Segunda;2026-10;Brasilândia;-23,46621;-46,68031;Roubo/furto;Média;Resolvida;Cidadão;;46,3
+349;2026-09-20;19;4 Noite (18h-24h);7 Domingo;2026-09;Capão Redondo;-23,66341;-46,78708;Vandalismo;Baixa;Resolvida;Cidadão;;85,9
+350;2026-10-06;18;4 Noite (18h-24h);2 Terça;2026-10;Brasilândia;-23,46474;-46,68297;Outros;Alta;Resolvida;Cidadão;;3,0
+351;2026-10-01;15;3 Tarde (12h-18h);4 Quinta;2026-10;Jardim Ângela;-23,71476;-46,7658;Vandalismo;Baixa;Resolvida;Cidadão;;88,9
+352;2026-10-30;20;4 Noite (18h-24h);5 Sexta;2026-10;Itaquera;-23,54141;-46,45552;Roubo/furto;Alta;Em atendimento;Cidadão;;
+353;2026-09-02;18;4 Noite (18h-24h);3 Quarta;2026-09;Cidade Tiradentes;-23,58221;-46,40786;Iluminação;Baixa;Resolvida;Cidadão;;109,5
+354;2026-11-01;22;4 Noite (18h-24h);7 Domingo;2026-11;Grajaú;-23,78542;-46,67412;Assédio;Alta;Resolvida;Cidadão;;4,1
+355;2026-09-15;9;2 Manhã (6h-12h);2 Terça;2026-09;Capão Redondo;-23,66475;-46,77834;Iluminação;Baixa;Resolvida;Cidadão;;226,0
+356;2026-10-14;11;2 Manhã (6h-12h);3 Quarta;2026-10;Capão Redondo;-23,67047;-46,78701;Vandalismo;Baixa;Resolvida;Cidadão;;204,5
+357;2026-09-09;23;4 Noite (18h-24h);3 Quarta;2026-09;Grajaú;-23,7863;-46,66935;Assédio;Média;Em atendimento;Cidadão;;
+358;2026-09-05;13;3 Tarde (12h-18h);6 Sábado;2026-09;Capão Redondo;-23,67582;-46,77695;Vandalismo;Média;Resolvida;Cidadão;;60,4
+359;2026-09-12;23;4 Noite (18h-24h);6 Sábado;2026-09;Jardim Ângela;-23,70699;-46,7759;Roubo/furto;Alta;Resolvida;Cidadão;;11,0
+360;2026-11-11;4;1 Madrugada (0h-6h);3 Quarta;2026-11;Parelheiros;-23,83681;-46,7303;Iluminação;Baixa;Resolvida;Cidadão;;85,0
+361;2026-10-06;2;1 Madrugada (0h-6h);2 Terça;2026-10;Jardim São Luís;-23,64378;-46,72955;Roubo/furto;Média;Resolvida;Cidadão;;48,7
+362;2026-11-03;0;1 Madrugada (0h-6h);2 Terça;2026-11;Cidade Tiradentes;-23,57818;-46,41175;Roubo/furto;Alta;Resolvida;Cidadão;;7,1
+363;2026-09-11;2;1 Madrugada (0h-6h);5 Sexta;2026-09;Brasilândia;-23,47765;-46,68375;Roubo/furto;Média;Resolvida;Cidadão;;62,7
+364;2026-10-12;21;4 Noite (18h-24h);1 Segunda;2026-10;Capão Redondo;-23,66719;-46,78304;Outros;Baixa;Resolvida;Cidadão;;178,9
+365;2026-10-20;2;1 Madrugada (0h-6h);2 Terça;2026-10;Capão Redondo;-23,67861;-46,78008;Roubo/furto;Alta;Resolvida;Cidadão;;3,4
+366;2026-09-30;23;4 Noite (18h-24h);3 Quarta;2026-09;Grajaú;-23,77855;-46,67319;Vandalismo;Baixa;Resolvida;Cidadão;;130,5
+367;2026-08-17;18;4 Noite (18h-24h);1 Segunda;2026-08;Itaquera;-23,54818;-46,46104;Vandalismo;Média;Resolvida;Cidadão;;41,1
+368;2026-11-08;19;4 Noite (18h-24h);7 Domingo;2026-11;Jardim Ângela;-23,70316;-46,76371;Outros;Baixa;Resolvida;Cidadão;;71,5
+369;2026-10-14;1;1 Madrugada (0h-6h);3 Quarta;2026-10;Itaquera;-23,54976;-46,44939;Iluminação;Baixa;Resolvida;Cidadão;;64,5
+370;2026-09-24;9;2 Manhã (6h-12h);4 Quinta;2026-09;Grajaú;-23,78388;-46,65665;Outros;Média;Resolvida;Cidadão;;21,3
+371;2026-11-06;3;1 Madrugada (0h-6h);5 Sexta;2026-11;Grajaú;-23,7775;-46,65841;Vandalismo;Baixa;Resolvida;Cidadão;;62,3
+372;2026-09-16;1;1 Madrugada (0h-6h);3 Quarta;2026-09;Grajaú;-23,7877;-46,67441;Roubo/furto;Média;Resolvida;Cidadão;;81,4
+373;2026-10-18;22;4 Noite (18h-24h);7 Domingo;2026-10;Grajaú;-23,79491;-46,66262;Outros;Média;Resolvida;Cidadão;;86,5
+374;2026-09-12;11;2 Manhã (6h-12h);6 Sábado;2026-09;Cidade Tiradentes;-23,58454;-46,41082;Vandalismo;Baixa;Resolvida;Cidadão;;53,9
+375;2026-09-06;20;4 Noite (18h-24h);7 Domingo;2026-09;Capão Redondo;-23,67101;-46,77971;Outros;Baixa;Resolvida;Cidadão;;109,3
+376;2026-09-26;5;1 Madrugada (0h-6h);6 Sábado;2026-09;Brasilândia;-23,46098;-46,68143;Roubo/furto;Média;Resolvida;Cidadão;;32,3
+377;2026-09-15;15;3 Tarde (12h-18h);2 Terça;2026-09;Itaquera;-23,54681;-46,46104;Assédio;Média;Resolvida;Cidadão;;33,4
+378;2026-11-07;20;4 Noite (18h-24h);6 Sábado;2026-11;Capão Redondo;-23,67413;-46,7707;Vandalismo;Baixa;Resolvida;Cidadão;;165,2
+379;2026-08-31;6;2 Manhã (6h-12h);1 Segunda;2026-08;Grajaú;-23,79504;-46,66099;Iluminação;Média;Resolvida;Cidadão;;89,0
+380;2026-09-03;23;4 Noite (18h-24h);4 Quinta;2026-09;Brasilândia;-23,46906;-46,69082;Roubo/furto;Média;Resolvida;Cidadão;;86,3
+381;2026-11-07;4;1 Madrugada (0h-6h);6 Sábado;2026-11;Grajaú;-23,78604;-46,66837;Vandalismo;Baixa;Aberta;Cidadão;;
+382;2026-10-29;7;2 Manhã (6h-12h);4 Quinta;2026-10;Capão Redondo;-23,67543;-46,78896;Outros;Alta;Resolvida;Cidadão;;10,4
+383;2026-10-27;20;4 Noite (18h-24h);2 Terça;2026-10;Cidade Tiradentes;-23,59075;-46,40511;Vandalismo;Média;Resolvida;Cidadão;;44,2
+384;2026-10-02;6;2 Manhã (6h-12h);5 Sexta;2026-10;Brasilândia;-23,47016;-46,68421;Iluminação;Baixa;Resolvida;Cidadão;;185,4
+385;2026-10-23;19;4 Noite (18h-24h);5 Sexta;2026-10;Cidade Tiradentes;-23,57646;-46,41474;Vandalismo;Baixa;Resolvida;Cidadão;;225,5
+386;2026-09-27;6;2 Manhã (6h-12h);7 Domingo;2026-09;Itaquera;-23,54996;-46,45196;Vandalismo;Média;Resolvida;Cidadão;;28,9
+387;2026-09-03;0;1 Madrugada (0h-6h);4 Quinta;2026-09;Jardim Ângela;-23,70997;-46,76801;Roubo/furto;Média;Resolvida;Cidadão;;80,4
+388;2026-10-27;7;2 Manhã (6h-12h);2 Terça;2026-10;Parelheiros;-23,81735;-46,73364;Iluminação;Baixa;Em atendimento;Cidadão;;
+389;2026-08-21;18;4 Noite (18h-24h);5 Sexta;2026-08;Itaquera;-23,54581;-46,45214;Roubo/furto;Média;Resolvida;Cidadão;;15,3
+390;2026-11-01;19;4 Noite (18h-24h);7 Domingo;2026-11;Capão Redondo;-23,66252;-46,77171;Outros;Baixa;Resolvida;Cidadão;;185,4
+391;2026-10-01;16;3 Tarde (12h-18h);4 Quinta;2026-10;Jardim São Luís;-23,65144;-46,73384;Vandalismo;Baixa;Resolvida;Cidadão;;196,9
+392;2026-11-05;20;4 Noite (18h-24h);4 Quinta;2026-11;Grajaú;-23,78923;-46,65597;Outros;Média;Em atendimento;Cidadão;;
+393;2026-09-27;3;1 Madrugada (0h-6h);7 Domingo;2026-09;Capão Redondo;-23,68004;-46,77752;Vandalismo;Baixa;Resolvida;Cidadão;;219,2
+394;2026-08-16;0;1 Madrugada (0h-6h);7 Domingo;2026-08;Jardim São Luís;-23,65986;-46,74697;Outros;Alta;Resolvida;Cidadão;;10,9
+395;2026-09-23;19;4 Noite (18h-24h);3 Quarta;2026-09;Parelheiros;-23,82379;-46,73105;Assédio;Média;Resolvida;Cidadão;;58,5
+396;2026-09-02;16;3 Tarde (12h-18h);3 Quarta;2026-09;Grajaú;-23,78705;-46,66911;Iluminação;Baixa;Resolvida;Cidadão;;109,6
+397;2026-11-02;0;1 Madrugada (0h-6h);1 Segunda;2026-11;Jardim Ângela;-23,71273;-46,77849;Assédio;Média;Resolvida;Cidadão;;94,1
+398;2026-08-22;5;1 Madrugada (0h-6h);6 Sábado;2026-08;Jardim Ângela;-23,70449;-46,77341;Iluminação;Baixa;Resolvida;Cidadão;;73,7
+399;2026-09-19;13;3 Tarde (12h-18h);6 Sábado;2026-09;Grajaú;-23,79258;-46,66107;Assédio;Média;Resolvida;Cidadão;;60,4
+400;2026-10-01;21;4 Noite (18h-24h);4 Quinta;2026-10;Grajaú;-23,78453;-46,65818;Iluminação;Baixa;Resolvida;Cidadão;;156,3
+401;2026-09-07;19;4 Noite (18h-24h);1 Segunda;2026-09;Jardim Ângela;-23,71267;-46,77922;Outros;Baixa;Resolvida;Cidadão;;215,9
+402;2026-09-09;21;4 Noite (18h-24h);3 Quarta;2026-09;Brasilândia;-23,45991;-46,68802;Roubo/furto;Alta;Resolvida;Cidadão;;3,3
+403;2026-10-21;2;1 Madrugada (0h-6h);3 Quarta;2026-10;Parelheiros;-23,82334;-46,73296;Vandalismo;Baixa;Aberta;Cidadão;;
+404;2026-10-12;6;2 Manhã (6h-12h);1 Segunda;2026-10;Itaquera;-23,54224;-46,45805;Roubo/furto;Alta;Resolvida;Cidadão;;2,5
+405;2026-09-09;13;3 Tarde (12h-18h);3 Quarta;2026-09;Jardim São Luís;-23,64899;-46,73725;Iluminação;Média;Aberta;Cidadão;;
+406;2026-10-26;2;1 Madrugada (0h-6h);1 Segunda;2026-10;Grajaú;-23,7936;-46,67289;Vandalismo;Baixa;Resolvida;Cidadão;;232,8
+407;2026-09-07;22;4 Noite (18h-24h);1 Segunda;2026-09;Itaquera;-23,54029;-46,45382;Iluminação;Baixa;Resolvida;Cidadão;;114,1
+408;2026-09-24;2;1 Madrugada (0h-6h);4 Quinta;2026-09;Grajaú;-23,78768;-46,65742;Roubo/furto;Alta;Resolvida;Cidadão;;5,9
+409;2026-09-15;22;4 Noite (18h-24h);2 Terça;2026-09;Grajaú;-23,77973;-46,66878;Vandalismo;Baixa;Resolvida;Cidadão;;104,9
+410;2026-08-19;1;1 Madrugada (0h-6h);3 Quarta;2026-08;Jardim São Luís;-23,64813;-46,73352;Vandalismo;Baixa;Resolvida;Cidadão;;97,3
+411;2026-09-22;18;4 Noite (18h-24h);2 Terça;2026-09;Capão Redondo;-23,66542;-46,77458;Iluminação;Média;Resolvida;Cidadão;;31,6
+412;2026-11-07;15;3 Tarde (12h-18h);6 Sábado;2026-11;Jardim São Luís;-23,64881;-46,74093;Outros;Baixa;Aberta;Cidadão;;
+413;2026-11-11;3;1 Madrugada (0h-6h);3 Quarta;2026-11;Jardim São Luís;-23,65801;-46,73987;Outros;Baixa;Resolvida;Cidadão;;85,5
+414;2026-10-10;9;2 Manhã (6h-12h);6 Sábado;2026-10;Cidade Tiradentes;-23,58972;-46,41859;Assédio;Alta;Resolvida;Cidadão;;8,3
+415;2026-09-18;3;1 Madrugada (0h-6h);5 Sexta;2026-09;Jardim Ângela;-23,71532;-46,76405;Assédio;Alta;Resolvida;Cidadão;;7,4
+416;2026-08-18;1;1 Madrugada (0h-6h);2 Terça;2026-08;Itaquera;-23,53855;-46,4467;Iluminação;Baixa;Resolvida;Cidadão;;69,2
+417;2026-08-20;4;1 Madrugada (0h-6h);4 Quinta;2026-08;Cidade Tiradentes;-23,57659;-46,40385;Outros;Média;Resolvida;Cidadão;;16,0
+418;2026-10-29;18;4 Noite (18h-24h);4 Quinta;2026-10;Jardim Ângela;-23,71003;-46,76194;Iluminação;Baixa;Resolvida;Cidadão;;81,6
+419;2026-09-27;21;4 Noite (18h-24h);7 Domingo;2026-09;Jardim Ângela;-23,70866;-46,76431;Roubo/furto;Alta;Resolvida;Cidadão;;6,6
+420;2026-11-14;14;3 Tarde (12h-18h);6 Sábado;2026-11;Brasilândia;-23,46767;-46,68512;Iluminação;Baixa;Resolvida;Cidadão;;2,7
+421;2026-11-01;13;3 Tarde (12h-18h);7 Domingo;2026-11;Capão Redondo;-23,66467;-46,78418;Assédio;Média;Resolvida;Cidadão;;66,7
+422;2026-09-09;20;4 Noite (18h-24h);3 Quarta;2026-09;Capão Redondo;-23,66475;-46,7732;Vandalismo;Média;Aberta;Cidadão;;
+423;2026-08-19;2;1 Madrugada (0h-6h);3 Quarta;2026-08;Cidade Tiradentes;-23,58701;-46,41083;Iluminação;Baixa;Resolvida;Cidadão;;239,5
+424;2026-09-01;19;4 Noite (18h-24h);2 Terça;2026-09;Itaquera;-23,53573;-46,45227;Roubo/furto;Média;Resolvida;Cidadão;;42,4
+425;2026-08-21;8;2 Manhã (6h-12h);5 Sexta;2026-08;Jardim São Luís;-23,64547;-46,74538;Iluminação;Média;Resolvida;Cidadão;;83,0
+426;2026-10-12;19;4 Noite (18h-24h);1 Segunda;2026-10;Jardim Ângela;-23,70861;-46,77409;Iluminação;Baixa;Resolvida;Cidadão;;73,3
+427;2026-10-17;20;4 Noite (18h-24h);6 Sábado;2026-10;Capão Redondo;-23,67447;-46,77769;Roubo/furto;Média;Resolvida;Cidadão;;86,8
+428;2026-09-15;1;1 Madrugada (0h-6h);2 Terça;2026-09;Jardim São Luís;-23,66158;-46,73121;Roubo/furto;Alta;Resolvida;Cidadão;;11,4
+429;2026-08-19;9;2 Manhã (6h-12h);3 Quarta;2026-08;Grajaú;-23,79258;-46,65515;Roubo/furto;Média;Resolvida;Cidadão;;85,5
+430;2026-09-03;22;4 Noite (18h-24h);4 Quinta;2026-09;Jardim Ângela;-23,71859;-46,77918;Roubo/furto;Média;Resolvida;Cidadão;;84,8
+431;2026-10-23;6;2 Manhã (6h-12h);5 Sexta;2026-10;Cidade Tiradentes;-23,58673;-46,40398;Roubo/furto;Média;Aberta;Cidadão;;
+432;2026-10-25;14;3 Tarde (12h-18h);7 Domingo;2026-10;Brasilândia;-23,47023;-46,68841;Vandalismo;Baixa;Resolvida;Cidadão;;62,4
+433;2026-09-26;0;1 Madrugada (0h-6h);6 Sábado;2026-09;Parelheiros;-23,83672;-46,73056;Outros;Média;Resolvida;Cidadão;;44,8
+434;2026-08-20;0;1 Madrugada (0h-6h);4 Quinta;2026-08;Capão Redondo;-23,67501;-46,78682;Outros;Baixa;Resolvida;Cidadão;;177,5
+435;2026-10-06;3;1 Madrugada (0h-6h);2 Terça;2026-10;Brasilândia;-23,45993;-46,68788;Roubo/furto;Média;Aberta;Cidadão;;
+436;2026-10-02;12;3 Tarde (12h-18h);5 Sexta;2026-10;Brasilândia;-23,46087;-46,68981;Outros;Baixa;Resolvida;Cidadão;;105,9
+437;2026-09-24;0;1 Madrugada (0h-6h);4 Quinta;2026-09;Grajaú;-23,78092;-46,66321;Roubo/furto;Média;Resolvida;Cidadão;;25,1
+438;2026-08-23;20;4 Noite (18h-24h);7 Domingo;2026-08;Grajaú;-23,78491;-46,67403;Vandalismo;Baixa;Resolvida;Cidadão;;88,2
+439;2026-08-23;21;4 Noite (18h-24h);7 Domingo;2026-08;Cidade Tiradentes;-23,58459;-46,40825;Assédio;Média;Resolvida;Cidadão;;48,4
+440;2026-10-19;19;4 Noite (18h-24h);1 Segunda;2026-10;Cidade Tiradentes;-23,58378;-46,41718;Iluminação;Média;Aberta;Cidadão;;

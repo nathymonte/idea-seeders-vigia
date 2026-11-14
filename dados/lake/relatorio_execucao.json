@@ -1,0 +1,17 @@
+{
+  "executado_em": "2026-11-14 17:26:09",
+  "duracao_segundos": 0.13,
+  "qualidade": {
+    "ocorrencias_descartadas": 0,
+    "ocorrencias_entrada": 440,
+    "ocorrencias_saida": 440,
+    "leituras_entrada": 2880,
+    "leituras_saida": 2880
+  },
+  "linhas_gold": {
+    "fato_ocorrencias": 440,
+    "fato_leituras": 2880,
+    "dim_postes": 8,
+    "resumo_bairro": 8
+  }
+}

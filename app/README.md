@@ -11,10 +11,12 @@ Todos os comandos são a partir da **raiz do projeto**, com a `.venv` ativada.
 ```bash
 pip install -r app/requirements.txt
 
-# 1. Criar o banco com dados de demonstração (só na primeira vez)
+# 1. Criar o banco com dados de demonstração e o data lake (só na primeira vez)
+python app/api/carga_inicial.py
+python dados/pipeline.py
+#    para recomeçar do zero: python app/api/carga_inicial.py --zerar
+
 cd app/api
-python carga_inicial.py
-#    para recomeçar do zero: python carga_inicial.py --zerar
 
 # 2. Subir a API (deixe este terminal aberto)
 uvicorn main:app --reload
@@ -45,6 +47,7 @@ A documentação interativa da API fica em <http://localhost:8000/docs>.
 | 3 | Minhas ocorrências | Cidadão | Acompanha o status de cada relato |
 | 4 | Fila de atendimento | Gestor | Fila ordenada por urgência, com filtros e mudança de status |
 | 5 | Postes inteligentes | Todos | Mapa e tabela com a última leitura de cada poste |
+| 6 | Dashboard | Gestor | Indicadores com filtros, lidos da camada gold do data lake (Área 2) |
 
 ## Endpoints da API
 

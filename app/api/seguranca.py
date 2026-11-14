@@ -16,6 +16,8 @@ from fastapi import Depends, Header, HTTPException, status
 from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 
 JWT_SEGREDO = os.getenv("JWT_SECRET", "troque-este-segredo-no-arquivo-env-vigia")
+if "JWT_SECRET" not in os.environ:
+    print("[aviso] JWT_SECRET não definido no .env: usando o segredo padrão (só para desenvolvimento).")
 JWT_ALGORITMO = "HS256"
 JWT_VALIDADE_HORAS = 8
 IOT_API_KEY = os.getenv("IOT_API_KEY", "vigia-iot-dev")

@@ -20,10 +20,11 @@ A IA classifica **situações, nunca pessoas**. Não há reconhecimento facial.
 | Pasta | Área | Status |
 |---|---|---|
 | [`ia/`](ia/README.md) | 1 · IA e automação: triagem de relatos com Gemini | ✅ Pronta |
-| [`dados/`](dados/README.md) | 2 · Big Data e visualização: modelo de dados, data lake, Power BI | 🟡 Modelo de dados pronto |
+| [`dados/`](dados/README.md) | 2 · Big Data e visualização: data lake bronze/silver/gold + dashboard | ✅ Pronta |
 | [`app/`](app/README.md) | 3 · MVP: telas em Streamlit + API FastAPI | ✅ Pronta |
 | [`iot/`](iot/README.md) | 3 · IoT: poste inteligente (Wokwi + simulador Python) | ✅ Pronta |
-| [`devops/`](devops/README.md) | 4 · DevOps, segurança e testes | ⏳ |
+| [`devops/`](devops/README.md) | 4 · DevOps, segurança e testes: Docker, GitHub Actions, pytest | ✅ Pronta |
+| [`tests/`](tests) | 4 · 27 casos de teste automatizados | ✅ |
 | [`docs/`](docs/arquitetura.md) | Arquitetura e material de apoio para o PDF | 🟡 |
 
 ## Pré-requisitos
@@ -31,7 +32,18 @@ A IA classifica **situações, nunca pessoas**. Não há reconhecimento facial.
 - Python 3.10 ou superior
 - Chave gratuita da API do Gemini: <https://aistudio.google.com/apikey>
 
-## Como executar
+## Jeito mais rápido: Docker
+
+Com o [Docker Desktop](https://www.docker.com/products/docker-desktop/) instalado, na raiz do projeto:
+
+```bash
+docker compose up --build
+```
+
+Abra <http://localhost:8501> (telas) e <http://localhost:8000/docs> (API). O banco e o data lake de
+demonstração são criados automaticamente.
+
+## Como executar sem Docker
 
 ```bash
 git clone <url-do-repositorio>
@@ -56,9 +68,17 @@ Em outro terminal, na raiz:
 ```bash
 streamlit run app/frontend/app.py    # telas em http://localhost:8501
 python iot/simulador_poste.py --cenario apagado   # poste enviando leituras
+python dados/pipeline.py                          # atualiza o data lake para o dashboard
 ```
 
 Contas de teste: `cidadao@vigia.com` / `cidadao123` e `gestor@vigia.com` / `gestor123`.
+
+Para rodar os testes automatizados:
+
+```bash
+pip install -r requirements.txt
+pytest
+```
 
 Cada área tem o próprio README com mais detalhes.
 
@@ -72,5 +92,5 @@ Cada área tem o próprio README com mais detalhes.
 
 | Ferramenta | Para quê |
 |---|---|
-| Claude (Anthropic) | Apoio na definição do plano do projeto, na estrutura inicial do código das Áreas 1 e 3 e na escrita da documentação. Todo o código foi revisado e testado pelo grupo. |
+| Claude (Anthropic) | Apoio na definição do plano do projeto, na estrutura inicial do código das Áreas 1, 2, 3 e 4 e na escrita da documentação. Todo o código foi revisado e testado pelo grupo. |
 | Google Gemini | Componente da solução: classificação dos relatos dos cidadãos (Área 1). |
